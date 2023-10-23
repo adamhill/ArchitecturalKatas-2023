@@ -5,14 +5,17 @@ Team contact: NEED GROUP ADDRESS
 
 Team members:
 [Vijji Guruswamy](https://www.linkedin.com/in/vijji-guruswamy-a2020714)
+
 [Adam Hill](https://www.linkedin.com/in/ahill/)
+
 [Rodolfo Nunez](https://www.linkedin.com/in/rodolfo-a-nunez/)
+
 
 ## Overview
 
 Wildlife Watcher
 
-[Wildlife.ai](https://wildlife.ai/), a charity using AI to accelerate wildlife conservation, wants to build an open-source wildlife camera that gets triggered based on the movement of target animals, identifies the species on the device and reports the observation in near real-time to biologists, enabling more efficient species conservation efforts worldwide.
+[Wildlife.ai](https://wildlife.ai/), a charity using AI to accelerate wildlife conservation, wants to build an open-source wildlife cameras that gets triggered based on the movement of target animals, identifies the species on the device and reports the observation in near real-time to biologists, enabling more efficient species conservation efforts worldwide.
 
 ### Users
 Biologists and nature enthusiasts (hundreds).
@@ -34,8 +37,8 @@ The API for the specific camera hasn’t been selected, allowing teams to specif
 Using https://www.developertoarchitect.com/downloads/architecture-characteristics-worksheet.pdf
 
 - Scalability: Ensuring the system can support hundreds
-- Availability, reliabilty, performance: Facilitating near real time communication
-- Interoperability: Allowing seamless integration with third-party services and platforms such as Wildlife Insights, TrapTagger, iNaturalist, and GBIF. Interoperability enables users to work with their preferred tools and extends the project's reach by connecting it to established conservation and research networks. Since requeriments state 
+- Availability, reliability, performance: Facilitating near real time communication
+- Interoperability: Allowing seamless integration with third-party services and platforms such as Wildlife Insights, TrapTagger, iNaturalist, and GBIF. Interoperability enables users to work with their preferred tools and extends the project's reach by connecting it to established conservation and research networks. Since requirements state 
   - communicate with camera
   - analyze video using third party platforms
   - Publish to iNaturalist
@@ -96,7 +99,7 @@ To ensure artificial intelligence is widely applied to protect biodiversity.
 [Nesher Bari](https://wildlife.ai/projects/nesher-bari/) Using data analytics to boost the protection of griffon vultures.
 [Koster Observatory](https://wildlife.ai/projects/koster-observatory/) A machine learning and citizen science approach to analyse underwater footage from Sweden’s first marine national park.
 
-Most of these projects involve machine vision, open-source systems that rely on AI, and machine learning to track, identify, or study wildlife. Moreover, the projects can be considered the building blocks for this new project since they represent proof of concepts of several feautues. The success of these projects indicates that Wildlife.ai is well-prepared to embark on an initiative that leverages its existing capabilities and expands them with multiple integrations 
+Most of these projects involve machine vision, open-source systems that rely on AI, and machine learning to track, identify, or study wildlife. Moreover, the projects can be considered the building blocks for this new project since they represent proof of concepts of several features. The success of these projects indicates that Wildlife.ai is well-prepared to embark on an initiative that leverages its existing capabilities and expands them with multiple integrations 
 
 ## Architecture Vision
 ### Architecture Project
@@ -137,7 +140,7 @@ The proposed solution entails the development of a mobile application compatible
     - Upload models
   - Receives alerts from cameras via email
   - Integrated with third-party platforms to analyzes videos
-  - Allow to label vidos to enable training edge models
+  - Allow to label videos to enable training edge models
   - Publishes frames to iNaturalist
   - Publishes species occurrences
 #### Phases
@@ -154,7 +157,7 @@ The initial phase focuses on specifying the required API for Wildlife cameras an
 ##### Mid term
 In the intermediate phase, the focus shifts to developing crucial integrations, including
 - Integrated with third-party platforms to analyzes videos
-- Allow to label vidos to enable training edge models
+- Allow to label videos to enable training edge models
 - Publishes frames to iNaturalist
 - Publishes species occurrences
 ##### Long term
