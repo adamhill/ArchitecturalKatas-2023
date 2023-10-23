@@ -4,6 +4,7 @@ This is the GitHub repository for a solution created by team WildTech-Visioneers
 Team contact: NEED GROUP ADDRESS
 
 Team members:
+
 [Vijji Guruswamy](https://www.linkedin.com/in/vijji-guruswamy-a2020714)
 
 [Adam Hill](https://www.linkedin.com/in/ahill/)
@@ -81,7 +82,7 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
 ADRs
 The linked ADRs contain the primary architectural decisions regarding the proposed design, including their context and rationale.
 
-ADR 001 - xxxx
+ADR 001 - Move processing to 3rd parties and edge computing (to save on costs and move this to open source)
 
 ## Preliminary phase
 Before proposing an architecture, a comprehensive understanding of the organization, its context, and its capabilities is essential
