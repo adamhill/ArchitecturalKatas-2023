@@ -71,7 +71,8 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
     - Change settings
     - Upload models
   - Receives alerts from cameras
-  - Receives video and images metadata from cameras
+  - Receives video and images metadata from camera
+  - Fetch video and images from camera
   - Analyzes videos using third-party platforms
   - Identify species
   - Trains edge models using labeled videos
