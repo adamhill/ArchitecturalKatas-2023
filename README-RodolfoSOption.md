@@ -73,6 +73,7 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
   - Receives alerts from cameras
   - Receives video and images metadata from cameras
   - Analyzes videos using third-party platforms
+  - Identify species
   - Trains edge models using labeled videos
   - Publishes frames to iNaturalist
   - Publishes species occurrences
