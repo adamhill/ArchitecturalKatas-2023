@@ -73,11 +73,17 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
   - Receives alerts from cameras
   - Receives video and images metadata from camera
   - Fetch video and images from camera
+  - Revord
   - Analyzes videos using third-party platforms
   - Identify species
   - Trains edge models using labeled videos
   - Publishes frames to iNaturalist
   - Publishes species occurrences
+  - Capture information that can shared along with the image are
+    - GPS coordinates of the camera
+    - Location, date and time information
+    - Climatic data when the video is captured
+    - Other sensor-based information.
 
 - Wildlife Camera
   - Specs in the assumption section
