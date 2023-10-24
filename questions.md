@@ -7,3 +7,6 @@
 - Do you own the Weta Watcher? Are we assuming this is the camera? (At the end of the presenataion, Neal said they hadn't decided on the camera, we can influence that if we like)
 - Ok to say that is there is enough b/w, the camera can upload videos? To where? (Note: none of the docs ever mention WiFi on the camera, we have assumed that)
 - Do we consider people making their own cameras, do we need to consider onboarding them?
+
+
+[Answers to questions](https://docs.google.com/spreadsheets/d/1-SIkVzHT3A5ablP3eSPiNtuUEjwxbcBb1drL6c5oe-s/edit?usp=sharing)
