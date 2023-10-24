@@ -1,5 +1,5 @@
-# WildTech-Visioneers  WHAT IS THE NAME THAT WE REGISTERED AT THE END WITH THIS REPO?
-This is the GitHub repository for a solution created by team WildTech-Visioneers during the 2023 O'Reilly Architectural Kata. It contains a proposed architecture for Wildlife.ai project for open-source wildlife camera that will enable more efficient species conservation efforts worldwide.
+# Wonderous Toys
+This is the GitHub repository for a solution created by team Wonderous Toys during the 2023 O'Reilly Architectural Kata. It contains a proposed architecture for Wildlife.ai project for open-source wildlife camera that will enable more efficient species conservation efforts worldwide.
 
 
 ## Overview
@@ -24,6 +24,33 @@ The camera hardware will be a combination of ultra-low-power microcontrollers (u
 
 The API for the specific camera hasn’t been selected, allowing teams to specify what behavior they might need from the hardware, helping the team choose appropriate hardware.
 
+##  Assumptions
+- Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
+- Financial Constraints: There are budgetary constraints on the project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
+- Limited User Base: The user base comprises only a few hundred users. Assuming each user will only hava a small number of cameras. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient. It is more practical to assume that mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like data uploading and remote camera control.
+- Biologist, Enthusiast, and support volunteers technical expertise: Most of the support is done by volunteers so the level of expertise varies. It will be best if any solution is easy to operate by anyone
+- Camera: The project takes advantage of the existing Wildlife.ai project, Wildlife Watcher, and assumes that its camera will be utilized. Furthermore, it establishes minimum hardware and software specifications for this camera.
+  - Wildlife Camera
+    - Hardware
+      - Physical devices
+      - Ultra-low-power microcontrollers (up to 512KB Flash)
+      - Watertight 3D Printed Enclosure
+     - Interchangeable modules including
+        - optical sensors
+        - IR lights
+        - transceiver modules
+        - batteries
+    - Software
+      - Triggered based on the movement of target animals
+      - Sends small alert message to the users via LoraWan, 3G or satellite
+      - Captures video footage
+      - Processes video
+      - Identifies  species
+      - Provides an API or interface to control camera and settings and download models
+      - Identifies species using models
+      - Provides  (e.g. date, time, GPS location)
+      - Records videos and images metadatametadata (e.g. date, time, GPS location, weather)
+
 ## Architecture Characteristics
 Using https://www.developertoarchitect.com/downloads/architecture-characteristics-worksheet.pdf
 
@@ -44,36 +71,25 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
     - Change settings
     - Upload models
   - Receives alerts from cameras
+  - Receives video and images metadata from cameras
   - Analyzes videos using third-party platforms
   - Trains edge models using labeled videos
   - Publishes frames to iNaturalist
   - Publishes species occurrences
 
 - Wildlife Camera
-  - Hardware
-    - Physical devices
-    - Ultra-low-power microcontrollers (up to 512KB Flash)
-    - Watertight 3D Printed Enclosure
-    - Interchangeable modules including
-      - optical sensors
-      - IR lights
-      - transceiver modules
-      - batteries
-  - Software
-    - Triggered based on the movement of target animals
-    - Sends small alert message to the users via LoraWan, 3G or satellite
-    - Captures video footage
-    - Processes video
-    - Identifies  species
-    - Provides an API or interface to control camera and settings and download models
-    - Identifies species using models
-    - Record metadata (e.g. date, time, GPS location, weather)
+  - Specs in the assumption section
 
-
-ADRs
+- Notification System:
+  - A push notification system that allows the camera to send a small piece of information
+### Architecture Design Records
 The linked ADRs contain the primary architectural decisions regarding the proposed design, including their context and rationale.
 
-ADR 001 - Move processing to 3rd parties and edge computing (to save on costs and move this to open source)
+ADR 001 - Move processing to 3rd parties and edge computing (to save on costs and move this to open source), no websites, global databases, comprenhesive list of all cameras, and locations
+
+ADR 002 - A push notification system like Amazon SNS, Google Pub/Sub will allow the camera to send information via an simple http command. The message will include email address of the receipient (configurable in the camera settings) and the body message (e.g. camera activated, species xxx identifies, storage crossing threshold, etc)
+
+ADR 003 - Ease of use, a mobile app should is simple enough to install and troubleshoot (we all use apps on our phones) and remove the burden of maintaing local infrastructure or running containers or vms
 
 ## Preliminary phase
 Before proposing an architecture, a comprehensive understanding of the organization, its context, and its capabilities is essential
@@ -86,9 +102,13 @@ Wildlife.ai (from website)
 To ensure artificial intelligence is widely applied to protect biodiversity.
 ### Other projects
 [Wildlife Watcher](https://wildlife.ai/projects/wildlife-watcher/) A wildlife camera that records animals and uses AI to identify them
+
 [Spyfish Aotearoa](https://wildlife.ai/projects/spyfish-aotearoa/) A citizen science and machine learning approach to identify fish in baited underwater videos
-[Pepeketua ID](https://wildlife.ai/projects/pepeketua-id/) A pattern recognition software that facilitates the individual identification of Pepeketua, New Zealand endemic frogs.
-[Nesher Bari](https://wildlife.ai/projects/nesher-bari/) Using data analytics to boost the protection of griffon vultures.
+
+[Pepeketua ID](https://wildlife.ai/projects/pepeketua-id/) A pattern recognition software that facilitates the individual identification of Pepeketua, New Zealand endemic frogs
+
+[Nesher Bari](https://wildlife.ai/projects/nesher-bari/) Using data analytics to boost the protection of griffon vultures
+
 [Koster Observatory](https://wildlife.ai/projects/koster-observatory/) A machine learning and citizen science approach to analyse underwater footage from Sweden’s first marine national park.
 
 Most of these projects involve machine vision, open-source systems that rely on AI, and machine learning to track, identify, or study wildlife. Moreover, the projects can be considered the building blocks for this new project since they represent proof of concepts of several features. The success of these projects indicates that Wildlife.ai is well-prepared to embark on an initiative that leverages its existing capabilities and expands them with multiple integrations 
@@ -100,29 +120,7 @@ This project garners the support of Wildlife Executive Director, Victor Anton, a
 - Biologists: These stakeholders are keen to embrace new technologies that can aid their work in wildlife conservation. They have concerns about the costs and the learning curve associated with adopting new solutions. User-friendly solutions are strongly preferred.
 - Enthusiasts: Those who harbor a genuine curiosity for wildlife are eager to engage with the project. However, they are also sensitive to financial considerations and the effort involved. The accessibility and user-friendliness of the system are of paramount importance to them.
 - Wildlife.ai: As a charitable trust dedicated to using artificial intelligence for the acceleration of wildlife conservation, Wildlife.ai places utmost importance on the funding and success of projects, as they are pivotal to the organization's mission and its future.
-###  Assumptions
-- Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This presents a significant challenge as the system needs to function in remote or potentially off-grid areas, where connectivity may be limited or unreliable.
-- Financial Constraints: There are budgetary constraints on the project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
-- Limited User Base: The user base comprises only a few hundred users. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient. It is more practical to assume that mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like data uploading and remote camera control.
-- Camera: The project takes advantage of the existing Wildlife.ai project, Wildlife Watcher, and assumes that its camera will be utilized. Furthermore, it establishes minimum hardware and software specifications for this camera.
-  - Wildlife Camera
-    - Hardware
-      - Physical devices
-      - Ultra-low-power microcontrollers (up to 512KB Flash)
-      - Watertight 3D Printed Enclosure
-     - Interchangeable modules including
-        - optical sensors
-        - IR lights
-        - transceiver modules
-        - batteries
-    - Software
-      - Triggered based on the movement of target animals
-      - Sends small alert message to the users via LoraWan, 3G or satellite
-      - Captures video footage
-      - Processes video
-      - Identifies  species
-      - Provides an API or interface to control camera and settings and download models
-      - Identifies species using models
+
 
 ### Overall Solution
 The proposed solution entails the development of a mobile application compatible with leading operating systems, such as Windows, MacOS, and Android, offering the following features:
