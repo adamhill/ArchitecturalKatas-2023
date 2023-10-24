@@ -1,18 +1,6 @@
 # WildTech-Visioneers  WHAT IS THE NAME THAT WE REGISTERED AT THE END WITH THIS REPO?
 This is the GitHub repository for a solution created by team WildTech-Visioneers during the 2023 O'Reilly Architectural Kata. It contains a proposed architecture for Wildlife.ai project for open-source wildlife camera that will enable more efficient species conservation efforts worldwide.
 
-Team contact: NEED GROUP ADDRESS
-
-Team members:
-
-[Vijji Guruswamy](https://www.linkedin.com/in/vijji-guruswamy-a2020714)
-
-[Adam Hill](https://www.linkedin.com/in/ahill/)
-
-[Kushal Nagrani](https://www.linkedin.com/in/kushal-nagrani/)
-
-[Rodolfo Nunez](https://www.linkedin.com/in/rodolfo-a-nunez/)
-
 
 ## Overview
 
