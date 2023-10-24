@@ -73,7 +73,6 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
   - Receives alerts from cameras
   - Receives video and images metadata from camera
   - Fetch video and images from camera
-  - Revord
   - Analyzes videos using third-party platforms
   - Identify species
   - Trains edge models using labeled videos
@@ -90,6 +89,7 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
 
 - Notification System:
   - A push notification system that allows the camera to send a small piece of information
+  
 ### Architecture Design Records
 The linked ADRs contain the primary architectural decisions regarding the proposed design, including their context and rationale.
 
