@@ -1,0 +1,5 @@
+- How would data make it out of the camera?
+- If it is only hundrers users, could it be thousands of cameras?
+- Is it preferred to centralize control of the cameras at wildlife.ai?
+- Does real time health mean ? Is it knowing about the species being identified, or video uploaded, or camera heartbeat (e.g. running out of battery, space)?
+- Are there any preferences on running on public, private, on premise or hybrid?
