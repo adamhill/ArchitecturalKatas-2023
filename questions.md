@@ -3,3 +3,7 @@
 - Is it preferred to centralize control of the cameras at wildlife.ai?
 - Does real time health mean ? Is it knowing about the species being identified, or video uploaded, or camera heartbeat (e.g. running out of battery, space)?
 - Are there any preferences on running on public, private, on premise or hybrid?
+- Are there preferences about data availability?
+- Do you own the Weta Watcher? Are we assuming this is the camera?
+- Ok to say that is there is enough b/w, the camera can upload videos? To where?
+- Do we consider people making their own cameras, do we need to consider onboarding them?
