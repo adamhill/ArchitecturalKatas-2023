@@ -9,6 +9,8 @@ Team members:
 
 [Adam Hill](https://www.linkedin.com/in/ahill/)
 
+[Kushal Nagrani](https://www.linkedin.com/in/kushal-nagrani/)
+
 [Rodolfo Nunez](https://www.linkedin.com/in/rodolfo-a-nunez/)
 
 
@@ -77,6 +79,7 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
     - Identifies  species
     - Provides an API or interface to control camera and settings and download models
     - Identifies species using models
+    - Record metadata (e.g. date, time, GPS location, weather)
 
 
 ADRs
@@ -144,6 +147,7 @@ The proposed solution entails the development of a mobile application compatible
   - Allow to label videos to enable training edge models
   - Publishes frames to iNaturalist
   - Publishes species occurrences
+  - Log metadata information (from camera data and user entered)
 #### Phases
 ##### Near term
 The initial phase focuses on specifying the required API for Wildlife cameras and developing a mobile app with a minimal feature set to demonstrate the project's viability. This feature set must encompass the following:
