@@ -111,9 +111,9 @@ ADR 003 - Move processing to 3rd parties and edge computing (to save on costs an
 
 ADR 004 - Ease of use, a mobile app should is simple enough to install and troubleshoot (we all use apps on our phones) and remove the burden of maintaing local infrastructure or running containers or vms
 
-
-
 ADR 005 - Front End to the Back End
+
+ADR 006 - Integrations: Do not re-invent, integrate.
 
 ## Preliminary phase
 Before proposing an architecture, a comprehensive understanding of the organization, its context, and its capabilities is essential
