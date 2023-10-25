@@ -79,6 +79,7 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
   - Trains edge models using labeled videos
   - Publishes frames to iNaturalist
   - Publishes species occurrences
+  - Integration with databases of species to help in identification
   - Capture information that can shared along with the image are
     - GPS coordinates of the camera
     - Location, date and time information
