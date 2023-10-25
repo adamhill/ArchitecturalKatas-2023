@@ -113,7 +113,7 @@ ADR 004 - Ease of use, a mobile app should is simple enough to install and troub
 
 ADR 005 - Front End to the Back End
 
-ADR 006 - Integrations: Do not re-invent, integrate.
+ADR 006 - Integrations: Do not re-invent, integrate
 
 ## Preliminary phase
 Before proposing an architecture, a comprehensive understanding of the organization, its context, and its capabilities is essential
