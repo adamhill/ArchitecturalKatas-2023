@@ -81,10 +81,18 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
   - Publishes species occurrences
   - Integration with databases of species to help in identification
   - Capture information that can shared along with the image are
+  - Ability to run statistics on the data captured by the camera
     - GPS coordinates of the camera
     - Location, date and time information
     - Climatic data when the video is captured
     - Other sensor-based information.
+  - Additional functionalities
+    - Historic view of what actions have been taken after receiving the video. (Ex: Log)
+    - Once you identify the species, the product should be able to run validation by connecting with other APIs.
+  - Plan projects support by coordinating all players.
+    - Ability to coordinate and plan projects in the portal with experts, students and non-profit organizations in a particular region
+    - Ability to run statistics on the data captured by the camera to measure project success or other key success metrics
+    - Coordinate with other enthusiasts who are part of other projects for community involvement.
 
 - Wildlife Camera
   - Specs in the assumption section
