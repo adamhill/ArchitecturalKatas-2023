@@ -111,6 +111,8 @@ ADR 003 - Ease of use, a mobile app should is simple enough to install and troub
 
 ADR 004 - Modular monolith to allow for faster build and test system. If the system is a success and scale starts becoming an issue. Refactor to microservices. LINK TO BOOK
 
+ADR 005 - Front End to the Back End
+
 ## Preliminary phase
 Before proposing an architecture, a comprehensive understanding of the organization, its context, and its capabilities is essential
 
