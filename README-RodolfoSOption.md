@@ -29,6 +29,7 @@ The API for the specific camera hasn’t been selected, allowing teams to specif
 - Financial Constraints: There are budgetary constraints on the project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
 - Limited User Base: The user base comprises only a few hundred users. Assuming each user will only hava a small number of cameras. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient. It is more practical to assume that mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like data uploading and remote camera control.
 - Biologist, Enthusiast, and support volunteers technical expertise: Most of the support is done by volunteers so the level of expertise varies. It will be best if any solution is easy to operate by anyone
+- Edge Computing: The phones and tablets can edit and process the images
 - Camera: The project takes advantage of the existing Wildlife.ai project, Wildlife Watcher, and assumes that its camera will be utilized. Furthermore, it establishes minimum hardware and software specifications for this camera.
   - Wildlife Camera
     - Hardware
@@ -89,7 +90,7 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
 
 - Notification System:
   - A push notification system that allows the camera to send a small piece of information
-  
+
 ### Architecture Design Records
 The linked ADRs contain the primary architectural decisions regarding the proposed design, including their context and rationale.
 
