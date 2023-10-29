@@ -1,4 +1,0 @@
-- Microsoft already has some turnkey data collection infrastructure & images setup that are completely free - https://planetarycomputer.microsoft.com/docs/overview/about
-- It already has public facing API's for searching
-- Microsoft’s [AI for Earth](https://www.microsoft.com/en-us/ai/ai-for-earth) program also provides open source technical resources for conservation work; check out our [machine learning APIs](https://aka.ms/ai4eapis), and read about our tools for [accelerating biodiversity surveys with AI](https://aka.ms/biodiversitysurveys) and [AI-accelerated land cover analysis](https://aka.ms/landcovermapping).
-- Example Camera(s) - [OAK-D](https://store.opencv.ai/products/oak-1)
