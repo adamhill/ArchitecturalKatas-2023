@@ -103,7 +103,7 @@ Using https://www.developertoarchitect.com/downloads/architecture-characteristic
 ### Architecture Design Records
 The linked ADRs contain the primary architectural decisions regarding the proposed design, including their context and rationale.
 
-ADR 001 - Event-Driven Camera Alerts: A push notification system like Amazon SNS, Google Pub/Sub will allow the camera to send information via an simple http command. The message will include email address of the receipient (configurable in the camera settings) and the body message (e.g. camera activated, species xxx identifies, storage crossing threshold, etc)
+[ADR 001](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR001-EventDriven) - Event-Driven Camera Alerts: A push notification system like Amazon SNS, Google Pub/Sub will allow the camera to send information via an simple http command. The message will include email address of the receipient (configurable in the camera settings) and the body message (e.g. camera activated, species xxx identifies, storage crossing threshold, etc)
 
 ADR 002 - Modular monolith to allow for faster build and test system. If the system is a success and scale starts becoming an issue. Refactor to microservices. LINK TO BOOK
 
