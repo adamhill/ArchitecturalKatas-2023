@@ -109,9 +109,9 @@ ADR 002 - Modular monolith to allow for faster build and test system. If the sys
 
 [ADR 003](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR003-Processing%20with%203rd%20Parties%20and%20Edge%20Computing) - Processing with 3rd Parties and Edge Computing (to save on costs and move this to open source), no websites, global databases, comprenhesive list of all cameras, and locations
 
-ADR 004 - Ease of use, a mobile app should is simple enough to install and troubleshoot (we all use apps on our phones) and remove the burden of maintaing local infrastructure or running containers or vms
+[ADR 004](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR004%20-%20Ease%20of%20Use%20-%20Mobile%20App%20Only.md) - Ease of use, a mobile app should is simple enough to install and troubleshoot (we all use apps on our phones) and remove the burden of maintaing local infrastructure or running containers or vms
 
-ADR 005 - Front End to the Back End
+[ADR 005](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR005%20-%20Backend%20For%20FrontEnd.md) - Front End to the Back End
 
 ADR 006 - Integrations: Do not re-invent, integrate
 
