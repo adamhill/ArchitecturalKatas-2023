@@ -107,7 +107,7 @@ The linked ADRs contain the primary architectural decisions regarding the propos
 
 ADR 002 - Modular monolith to allow for faster build and test system. If the system is a success and scale starts becoming an issue. Refactor to microservices. LINK TO BOOK
 
-ADR 003 - Move processing to 3rd parties and edge computing (to save on costs and move this to open source), no websites, global databases, comprenhesive list of all cameras, and locations
+[ADR 003]() - Processing with 3rd Parties and Edge Computing (to save on costs and move this to open source), no websites, global databases, comprenhesive list of all cameras, and locations
 
 ADR 004 - Ease of use, a mobile app should is simple enough to install and troubleshoot (we all use apps on our phones) and remove the burden of maintaing local infrastructure or running containers or vms
 
