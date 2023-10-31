@@ -95,6 +95,7 @@ Additionally, we recognize the importance of the system's ability to adapt and g
 ## Overview 
 
 ## Identification Of Domains
+![Domain identification excercise](figures/EventStorming.drawio.svg "Domain Identificaiton")
 
 ## Domain Capabilities In-depth
 [User Domain](domain/user-domain.md)
