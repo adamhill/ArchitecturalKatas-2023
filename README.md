@@ -122,7 +122,7 @@ The linked ADRs contain the primary architectural decisions regarding the propos
 
 [ADR 001](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR001-EventDriven)
 
-ADR 002 - Modular monolith to allow for faster build and test system. If the system is a success and scale starts becoming an issue. Refactor to microservices. LINK TO BOOK
+[ADR 002](ADRs/ADR002-ModularMonolith.md)
 
 [ADR 003](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR003-Processing%20with%203rd%20Parties%20and%20Edge%20Computing)
 
