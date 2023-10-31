@@ -92,14 +92,17 @@ Additionally, we recognize the importance of the system's ability to adapt and g
 
 # 4. Domain Design
 
-	## Overview 
+## Overview 
 
-	## Identification Of Domains
+## Identification Of Domains
 
-	## Domain Capabilities In-depth
+## Domain Capabilities In-depth
 [User Domain](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/domain/user-domain.md)
+
 [Multimedia Domain](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/domain/multimedia-domain.md)
+
 [Notification Domain](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/domain/notification-domain.md)
+
 [Integration Domain](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/domain/Integrations-module.md)
 
 
