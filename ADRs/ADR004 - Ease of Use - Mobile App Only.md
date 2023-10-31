@@ -4,7 +4,7 @@
 Easy of Use - Primarily use a Mobile App
 
 ## Status
-Approved
+Proposed
 
 ## Context
 From the initial requirements, the mobile app for Wildlife.ai seems to be the most mentioned device next to the camera itself. Setting up, adjusting and retreving the photos all mention a mobile application

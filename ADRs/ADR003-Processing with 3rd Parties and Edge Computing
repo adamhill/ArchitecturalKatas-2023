@@ -4,7 +4,7 @@
 Processing with 3rd Parties and Edge Computing
 
 ## Status
-Approved
+Proposed
 
 ## Context
 The Wildlife.ai project involves open-source wildlife cameras that capture, identify species, and report observations. To ensure cost-efficiency, sustainability, and leverage open-source resources, a decision needs to be made regarding the processing of data, specifically moving away from central websites, global databases, and maintaining a comprehensive list of all cameras and locations.
