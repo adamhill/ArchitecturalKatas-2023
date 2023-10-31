@@ -14,7 +14,8 @@ This is the GitHub repository for a solution created by team Wonderous Toys duri
 - Users should be able to publish the species occurrences to [GBIF](https://www.gbif.org/) using the [Camtrap DP](https://tdwg.github.io/camtrap-dp/), [data exchange format](https://tdwg.github.io/camtrap-dp/)
 - Cameras should be able to process the footage on the device and send a small alert message to the users via LoraWan, 3G or satellite
 
-### Additional Context
+**Additional Context**
+
 The camera hardware will be a combination of ultra-low-power microcontrollers (up to 512KB Flash) and interchangeable modules (e.g. optical sensor, IR lights, transceiver module, batteries) enclosed in a watertight and 3D printed enclosure.
 
 The API for the specific camera hasn’t been selected, allowing teams to specify what behavior they might need from the hardware, helping the team choose appropriate hardware.
@@ -27,11 +28,11 @@ The API for the specific camera hasn’t been selected, allowing teams to specif
 * Camera will be purchased from Wildlife AI partner or User builds it themselves using Wildlife AI open source.
 * User can download Mobile App from the stores.
 * Any integrations with partners and vendors applications can be configured in the application.
-- Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
-- Financial Constraints: There are budgetary constraints on the project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
-- Limited User Base: The user base comprises only a few hundred users. Assuming each user will only hava a small number of cameras. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient. It is more practical to assume that mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like data uploading and remote camera control.
-- Biologist, Enthusiast, and support volunteers technical expertise: Most of the support is done by volunteers so the level of expertise varies. It will be best if any solution is easy to operate by anyone
-- Edge Computing: The phones and tablets can edit and process the images
+* Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
+* Financial Constraints: There are budgetary constraints on the project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
+* Limited User Base: The user base comprises only a few hundred users. Assuming each user will only hava a small number of cameras. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient. It is more practical to assume that mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like data uploading and remote camera control.
+* Biologists, enthusiasts, and volunteers have different levels of technical know-how. Since many tasks are done by volunteers, it would be great if the solution is simple for anyone to use.
+* When we talk about edge computing, it means that your phones and tablets have the ability to both edit and process images.
 
 # 3. Solution Space
 
@@ -39,9 +40,9 @@ The API for the specific camera hasn’t been selected, allowing teams to specif
 
 In the pursuit of business success, several critical factors stand out as the driving forces propelling Wildlife AI's operations forward. These key drivers encompass the core principles and objectives behind our team's technical solution to guide Wildlife AI's strategies and actions.
 
-**Rapid Market Penetration And Prototype Testing**
+**Prototype Testing**
 
-One of the foremost drivers is the need for swift market access and the ability to introduce Wildlife AI's product for the testing of prototypes and ideas. This imperative arises from the desire to observe how Wildlife AI's innovations resonate with a wide spectrum of life forms inhabiting diverse ecosystems, including forests, oceans, and avian habitats. By quickly immersing Wildlife AI's solutions in these diverse environments, invaluable insights are gained into what works and what doesn't. This agile approach enables Wildlife AI to respond promptly to feedback, refining the product based on real-world usage and ensuring its suitability for various species and ecosystems across the globe.
+One of the foremost drivers is ability to introduce Wildlife AI's product for the testing of prototypes and ideas. This imperative arises from the desire to observe how Wildlife AI's innovations resonate with a wide spectrum of life forms inhabiting diverse ecosystems, including forests, oceans, and avian habitats. By quickly immersing Wildlife AI's solutions in these diverse environments, invaluable insights are gained into what works and what doesn't. This agile approach enables Wildlife AI to respond promptly to feedback, refining the product based on real-world usage and ensuring its suitability for various species and ecosystems across the globe.
 
 **Species Conservation With Community/Government Collaboration**
 
@@ -49,10 +50,10 @@ Another pivotal driver Wildlife AI is the commitment to species conservation. Wi
 
 **Future-ready Integration Support**
 
-In an ever-evolving technological landscape, the ability to adapt and evolve is paramount. Recognizing this, our solutions team is dedicated to enabling Wildlife AI to gear towards supporting future growth and innovation through robust integrations. This forward-thinking approach ensures that Wildlife AI's systems remain flexible and adaptable, accommodating emerging trends and technologies. By doing so, Wildlife AI can position itself to stay ahead of the curve and continue providing state-of-the-art solutions to support its mission.
+In an ever-evolving technological landscape, the ability to adapt and evolve is paramount. Recognizing this, our solutions team is dedicated to enabling Wildlife AI's users to gear towards supporting future growth and innovation through robust integrations. This forward-thinking approach ensures that Wildlife AI's systems remain flexible and adaptable, accommodating emerging trends and technologies. By doing so, Wildlife AI can position itself to stay ahead of the curve and continue providing state-of-the-art solutions to support its mission.
 
 ### Summary
-In summary, focusing on rapid market access, ecological conservation, and future-proofing systems that allow to shape the core values and actions of Wildlife AI the solution our team proposes should meet the needs of Wildlife AI's business today but also anticipate and address the challenges and opportunities of tomorrow.
+In summary, focusing on prototype testing the product, ecological conservation, and future-proofing systems that allow to shape the core values and actions of Wildlife AI the solution our team proposes should meet the needs of Wildlife AI's business today but also anticipate and address the challenges and opportunities of tomorrow.
 
 
 ## 3.2 Architecture Characteristics
@@ -77,7 +78,7 @@ By prioritizing these architectural characteristics, we aim to develop a system 
 
 ## 3.3 Architecture Style Proposed
 
-Based on the architectural characteristics we've identified, we suggest a combination of **Modular Monolith** and **Micro kernel architecture** to build the application. In this approach, we organize the different aspects of the business into modules and one of these modules uses micro-kernel design. Each of these modules has its own well defined API's that serve as a way for them to communicate with one another and the user interface components. This setup makes sure that the application is well-structured and can efficiently work with different integrations to support the business requirements.
+Based on the architectural characteristics we've identified, we suggest a combination of **Modular Monolith** and **Micro kernel architecture** to build the application. In this approach, we organize the different aspects of the functionalities into modules and one of these modules uses micro-kernel design. Each of these modules has its own well defined API's that serve as a way for them to communicate with one another and the user interface components. This setup makes sure that the application is well-structured and can efficiently work with different integrations to support the business requirements.
 
 ![System Architecture Overview](figures/system-architecture-basic.drawio.png "System Architecture")
 
@@ -123,11 +124,11 @@ The linked ADRs contain the primary architectural decisions regarding the propos
 
 ADR 002 - Modular monolith to allow for faster build and test system. If the system is a success and scale starts becoming an issue. Refactor to microservices. LINK TO BOOK
 
-[ADR 003](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR003-Processing%20with%203rd%20Parties%20and%20Edge%20Computing) 
+[ADR 003](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR003-Processing%20with%203rd%20Parties%20and%20Edge%20Computing)
 
 [ADR 004](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR004%20-%20Ease%20of%20Use%20-%20Mobile%20App%20Only.md)
 
-[ADR 005](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR005%20-%20Backend%20For%20FrontEnd.md)
+[ADR 005](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR005%20-%20Backend%20For%20FrontEnd.m`d)
 
 ADR 006 - Integrations: Do not re-invent, integrate
 
@@ -136,8 +137,3 @@ ADR 006 - Integrations: Do not re-invent, integrate
 2. https://www.kamilgrzybek.com/blog/posts/modular-monolith-domain-centric-design
 3. Architecture style worksheet https://www.developertoarchitect.com/downloads/architecture-styles-worksheet.pdf
 4. https://github.com/Sairyss/domain-driven-hexagon
-
-
-
-
-
