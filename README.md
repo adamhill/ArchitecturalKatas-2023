@@ -97,13 +97,13 @@ Additionally, we recognize the importance of the system's ability to adapt and g
 ## Identification Of Domains
 
 ## Domain Capabilities In-depth
-[User Domain](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/domain/user-domain.md)
+[User Domain](domain/user-domain.md)
 
-[Multimedia Domain](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/domain/multimedia-domain.md)
+[Multimedia Domain](domain/multimedia-domain.md)
 
-[Notification Domain](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/domain/notification-domain.md)
+[Notification Domain](domain/notification-domain.md)
 
-[Integration Domain](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/domain/Integrations-module.md)
+[Integration Domain](domain/Integrations-module.md)
 
 # 4.1 Actors Overvew
 This shows the relationships between all the Actors in the Wildlife.ai system,
