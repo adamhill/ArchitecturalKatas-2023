@@ -1,31 +1,30 @@
-# Notification Domain: Proving notification services 
+# User Domain: Enabling User-Centric Control and Interaction
 
-The Notification capability enables the Wildlife AI cameras to send short notifications to the mobile app. The following features are provided by this capability:
-- Camera uses an API to specify the email address to alert and the short message to transmit
-
-This design allows to easily extend the short messages the camera can send based on new developments of the mobile app and the camera itself.
+The User Domain within the Wildlife AI architecture places users at the forefront of the system, emphasizing user-centric control and interaction with the wildlife cameras and associated functionalities. This domain encapsulates a wide array of capabilities geared towards delivering a seamless and user-friendly experience to both biologists and nature enthusiasts.
 
 ## Components
 
-### Plugins
+### User Authentication and Authorization
+A fundamental aspect of the User Domain is the management of user authentication and authorization. It ensures that users can securely access the system, control cameras, and utilize various features while maintaining data privacy and security.
 
-Each integration with partners and vendors is encapsulated within an individual plugin, with each plugin exposing its distinctive set of APIs. Internally, these plugins are configurable, enabling them to efficiently communicate with their respective partner APIs and function as adapters for data manipulation when exchanging information between image data and partner APIs. The module is constructed to smoothly accommodate future integrations, facilitating the incorporation of new plugins into the ecosystem.
+### Mobile App Interface
+The User Domain hosts the mobile app interface, providing an intuitive platform for users to interact with the wildlife cameras. The mobile app allows users to perform critical actions, such as turning cameras on and off, adjusting settings, and uploading models. This user-friendly interface is designed to accommodate users with varying levels of technical expertise, making it accessible to a broad audience.
 
-### Core System
-Core system has two components
+### Video Analysis and Labeling
+Facilitating video analysis and labeling is a significant capability within this domain. Users can effectively analyze captured videos using common camera trap labeling platforms, ensuring accurate species identification. This functionality empowers biologists and enthusiasts to contribute to wildlife conservation efforts by providing valuable data and insights.
 
-#### 1. Google's Pub/Sub service
+### Edge Model Training
+The User Domain plays a pivotal role in enabling users to easily train edge models. Users can utilize their own labeled videos and leverage third-party services, such as Roboflow, Edge Impulse, or TensorFlow Lite, to train models. This feature enhances the system's adaptability and ensures that users can harness the power of machine learning for wildlife conservation.
 
-Pub/Sub is an asynchronous and scalable messaging service that decouples services producing messages from services processing those messages. Pub/Sub allows services to communicate asynchronously, with latencies on the order of 100 milliseconds. Pub/Sub will relay the API calls to email messages to the camera operators.
+### Data Sharing and Publication
+Users have the ability to publish frames from captured videos to iNaturalist, a platform where experts can assist in species identification. Additionally, users can publish species occurrences to GBIF using the Camtrap DP data exchange format. This data sharing capability fosters collaboration and contributes to the global conservation and research community.
 
-#### 2. Camera notification settings
+### User Preferences and Statistics
+The User Domain encompasses features that allow users to manage their preferences and access statistical insights. Users can set their preferences for camera settings and notifications, ensuring a personalized experience. Furthermore, the system collects and presents statistics based on the data captured by the cameras. This data includes GPS coordinates, location, date and time information, climatic data, and other sensor-based information.
 
-The camera notifiation settings record the email address of its operators as well as the Wildlife AI's Pub/Sub service so the cameras can make the API calls to send messages.
-
-
-## Related ADRs
-
-[ADR 004](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR004%20-%20Ease%20of%20Use%20-%20Mobile%20App%20Only.md)
+### Community Involvement and Coordination
+For community-driven projects and collaborations, the User Domain facilitates community involvement and coordination. Users can engage with other enthusiasts, experts, and non-profit organizations to plan and coordinate projects within a specific region. The platform also supports project management by providing tools to measure success metrics and project coordination.
 
 ## Summary
-In summary, the notification domain is the main communication system for the Wildlife AI's cameras, ensuring that they can transmit short messages in near real time.
+
+In summary, the User Domain is a central component of the Wildlife AI architecture that prioritizes user engagement and control. By providing a user-friendly mobile app interface, robust video analysis capabilities, and seamless data sharing features, this domain empowers users to actively participate in wildlife conservation efforts. It enhances the overall user experience while promoting collaboration and community involvement.
