@@ -93,6 +93,7 @@ Additionally, we recognize the importance of the system's ability to adapt and g
 # 4. Domain Design
 
 ## Overview 
+The Domain Design section of the Wildlife AI architecture outlines the structure and capabilities of various domains that together form a cohesive system for wildlife conservation. Each domain is specialized in its function, catering to different aspects of the overall solution. The design promotes a user-friendly and efficient approach to wildlife conservation, driven by advanced technologies and interdisciplinary expertise.
 
 ## Identification Of Domains
 ![Domain identification excercise](figures/EventStorming.drawio.svg "Domain Identificaiton")
