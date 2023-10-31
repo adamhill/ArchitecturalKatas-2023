@@ -4,7 +4,7 @@
 Event-Driven Camera Alerts
 
 ## Status
-Approved
+Proposed
 
 ## Context
 We are designing an architecture for the Wildlife.ai project, which involves open-source wildlife cameras that capture and report observations of wildlife. Due to limited internet access in remote camera locations and email delivery challenges, we need a reliable and cost-effective way to alert users (mobile app) when camera events occur

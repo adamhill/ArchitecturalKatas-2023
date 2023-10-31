@@ -1,19 +1,37 @@
-# 1. Team Members (intro and bio)
+# 1. Wonderous Toys
+This is the GitHub repository for a solution created by team Wonderous Toys during the 2023 O'Reilly Architectural Kata. It contains a proposed architecture for Wildlife.ai project for open-source wildlife camera that will enable more efficient species conservation efforts worldwide.
 
 # 2. Problem Space
 
 ## 2.1 Purpose
+[Wildlife.ai](https://wildlife.ai/), a charity using AI to accelerate wildlife conservation, wants to build an open-source wildlife cameras that gets triggered based on the movement of target animals, identifies the species on the device and reports the observation in near real-time to biologists, enabling more efficient species conservation efforts worldwide.
+
 ## 2.2 Requirements
+- Users should be able to communicate with the camera using a mobile app (to set the cameras on/off and adjust settings without opening the cameras)
+- Users should be able to analyze the videos using common camera trap labelling platforms [(Wildlife Insights](https://wildlifeinsights.org/), [TrapTagger](https://wildeyeconservation.org/traptagger) or [Trapper](https://gitlab.com/trapper-project/trapper))
+- Users should be able to publish frames from the videos to iNaturalist for experts to help with the identification of the species
+- Users should be able to easily train edge models, using their own labelled videos, and upload the models to the cameras (maybe using third party services like [Roboflow](https://roboflow.com/), [Edge Impulse](https://edgeimpulse.com/) or [TensorFlow Lite](https://www.tensorflow.org/lite))
+- Users should be able to publish the species occurrences to [GBIF](https://www.gbif.org/) using the [Camtrap DP](https://tdwg.github.io/camtrap-dp/), [data exchange format](https://tdwg.github.io/camtrap-dp/)
+- Cameras should be able to process the footage on the device and send a small alert message to the users via LoraWan, 3G or satellite
+
+### Additional Context
+The camera hardware will be a combination of ultra-low-power microcontrollers (up to 512KB Flash) and interchangeable modules (e.g. optical sensor, IR lights, transceiver module, batteries) enclosed in a watertight and 3D printed enclosure.
+
+The API for the specific camera hasn’t been selected, allowing teams to specify what behavior they might need from the hardware, helping the team choose appropriate hardware.
+
 ## 2.3 High Level Overview
 
 ![Business Overview](figures/business-overview.drawio.png "Business Overview")
 
 ## 2.4 Assumptions
-* Camera will be purchased outside the application portal, could be either through phone order or directly from the Wildlife.ai
-* When user purchases the physical camera device they will get access to the application to access all resources.
-* Admin user have to register the end user up so that user can access the application
+* Camera will be purchased from Wildlife AI partner or User builds it themselves using Wildlife AI open source.
+* User can download Mobile App from the stores.
 * Any integrations with partners and vendors applications can be configured in the application.
-
+- Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
+- Financial Constraints: There are budgetary constraints on the project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
+- Limited User Base: The user base comprises only a few hundred users. Assuming each user will only hava a small number of cameras. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient. It is more practical to assume that mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like data uploading and remote camera control.
+- Biologist, Enthusiast, and support volunteers technical expertise: Most of the support is done by volunteers so the level of expertise varies. It will be best if any solution is easy to operate by anyone
+- Edge Computing: The phones and tablets can edit and process the images
 
 # 3. Solution Space
 
@@ -101,15 +119,15 @@ Additionally, we recognize the importance of the system's ability to adapt and g
 # ADR's
 The linked ADRs contain the primary architectural decisions regarding the proposed design, including their context and rationale.
 
-[ADR 001](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR001-EventDriven) - Event-Driven Camera Alerts: A push notification system like Amazon SNS, Google Pub/Sub will allow the camera to send information via an simple http command. The message will include email address of the receipient (configurable in the camera settings) and the body message (e.g. camera activated, species xxx identifies, storage crossing threshold, etc)
+[ADR 001](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR001-EventDriven)
 
 ADR 002 - Modular monolith to allow for faster build and test system. If the system is a success and scale starts becoming an issue. Refactor to microservices. LINK TO BOOK
 
-[ADR 003](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR003-Processing%20with%203rd%20Parties%20and%20Edge%20Computing) - Processing with 3rd Parties and Edge Computing (to save on costs and move this to open source), no websites, global databases, comprenhesive list of all cameras, and locations
+[ADR 003](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR003-Processing%20with%203rd%20Parties%20and%20Edge%20Computing) 
 
-[ADR 004](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR004%20-%20Ease%20of%20Use%20-%20Mobile%20App%20Only.md) - Ease of use, a mobile app should is simple enough to install and troubleshoot (we all use apps on our phones) and remove the burden of maintaing local infrastructure or running containers or vms
+[ADR 004](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR004%20-%20Ease%20of%20Use%20-%20Mobile%20App%20Only.md)
 
-[ADR 005](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR005%20-%20Backend%20For%20FrontEnd.md) - Front End to the Back End
+[ADR 005](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/ADRs/ADR005%20-%20Backend%20For%20FrontEnd.md)
 
 ADR 006 - Integrations: Do not re-invent, integrate
 
