@@ -3,7 +3,7 @@
 ## Title
 Backend For FrontEnd
 ## Status
-Approved
+Proposed
 
 ## Context
 We have decided to primarily use a mobile app to provision, adjust and retrieve photos from the camera
