@@ -10,9 +10,9 @@ This design removes the need of central storage and allows each camera operator 
 ## Components
 The Bluetooth spec already has a well defined protocol stack for initiating communications and transfer with controllers and peripherals
 
-[** Explaination about the BT capabilities model**]
+Bluetooth has a multilevel stack from the physical layer all the way up to the application layer. The topmost part of this is the Application Profile, this defines common, high level operations for popular devices.
 
-[**LINK TO SIMPLE BLUETOOTH STACK DIAGRAM**]
+![Bluetooth Stack](../figures/bluetooth_le_stack.png "Bluetooth Stack")
 
 ### Plugins
 
@@ -22,15 +22,19 @@ According to the current images on iNaturalist, images are only 640x480 and ~15K
 
 
 ### Core System
-Core system has two components
+The core system to retreive the images is the pre-existing Bluetooth stack.
+- The there is already a protocol for discovery and pairing, for the initial connection
+- There is already an Object Transfer Application profile for moving data to and from the camera
 
 #### 1. Bluetooth service
-
-(Explanation of stuff already built in)
+- The topmost level of the Bluetooth stack is the Application Profile. This contains a Profile for the Object Transfer Service, this will allow us to query and retreive blobs (in our case, files) from the camera and onto the mobile device.
+- This profile also allows deletion of the blobs
 
 #### 2. Camera Multimedia features
-
-The camera record the images and store them locally until a user transfer them to a device via the Mobile App
+Most of the camera side operations are a black box to us.
+- The camera will watch for motion and then snap imagaes of whatever the camera is pointing to.
+- The AI model on the camera will attempt to use its current model to identify whatever is in the picture and label it with a bounding box and any other metadata about the image (lat lon, temperature, humidity, timestamp etc...)
+- The camera save these images locally until a user transfers them to a device via the Mobile App
 
 
 ## Related ADRs

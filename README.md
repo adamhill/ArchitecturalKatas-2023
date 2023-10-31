@@ -36,9 +36,9 @@ The API for the specific camera hasn’t been selected, allowing teams to specif
 
 # 3. Solution Space
 
-## 3.1 Context - Key Business Drivers
+## 3.1 Context - Key Drivers
 
-In the pursuit of business success, several critical factors stand out as the driving forces propelling Wildlife AI's operations forward. These key drivers encompass the core principles and objectives behind our team's technical solution to guide Wildlife AI's strategies and actions.
+In the pursuit of the charities success, several critical factors stand out as the driving forces propelling Wildlife AI's operations forward. These key drivers encompass the core principles and objectives behind our team's technical solution to guide Wildlife AI's strategies and actions.
 
 **Prototype Testing**
 
@@ -105,6 +105,10 @@ Additionally, we recognize the importance of the system's ability to adapt and g
 
 [Integration Domain](https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/domain/Integrations-module.md)
 
+# 4.1 Actors Overvew
+This shows the relationships between all the Actors in the Wildlife.ai system,
+
+[**Insert diagram of Actors**]
 
 # 5. System Architecture
 
