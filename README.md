@@ -135,7 +135,7 @@ The Integrations module allows Wildlife AI camera users to connect with various 
 The Workflow module exposes APIs designed to efficiently manage and coordinate tasks across all the above modules within the Wildlife AI application to support certain expensive use cases.
 
 # Long Term Expansions
-* User purchasing can be done in the same portal by eliminating user registration by admin person
+* User purchasing can be done in the same portal
 * Create and coordinate projects in the portal for community togetherness
 * Sucess metrics of the camera
 * Build strict boundaries so there is no direct communication between modules
