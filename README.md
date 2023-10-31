@@ -80,7 +80,7 @@ By prioritizing these architectural characteristics, we aim to develop a system 
 
 Based on the architectural characteristics we've identified, we suggest a combination of **Modular Monolith** and **Micro kernel architecture** to build the application. In this approach, we organize the different aspects of the functionalities into modules and one of these modules uses micro-kernel design. Each of these modules has its own well defined API's that serve as a way for them to communicate with one another and the user interface components. This setup makes sure that the application is well-structured and can efficiently work with different integrations to support the business requirements.
 
-![System Architecture Overview](figures/system-architecture-basic.drawio.png "System Architecture")
+
 
 
 
@@ -104,10 +104,35 @@ Additionally, we recognize the importance of the system's ability to adapt and g
 		### Integration Domain
 
 
-# System Architecture
-	# Workflow api
-	# Api's for other
+# 5. System Architecture
 
+Our application is designed to meet the [needs](#22-requirements) specified by Wildlife AI, which includes managing users, handling cameras, sending notifications, working with multimedia like photos and videos, and sharing data with our partners and vendors. To make it organized, we've assigned each domain to its own module in our proposed solution.
+
+In addition to these domain modules, we've created a special module called the workflow module. This module can help us do complicated tasks automatically. For example, when we need to send media data to a third-party partner for their edge modeling work, it involves lots of steps like making multiple API calls and preparing the data in a specific way.
+
+![System Architecture Overview](figures/system-architecture-basic.drawio.png "System Architecture")
+
+## 5.1 Core Components of System Architecture
+
+### User module
+The primary responsibility of the user module is managing user accounts and information that's specific to each user. People using the application can create their accounts, log in (optionally), and view their profiles, which makes the whole experience more personalized for them. Additionally, within this module, users can choose their notification preferences to decide how they want to be notified about things in the app. This way, users have control over their interaction with the application. Additionally, they can invite other users who would like to participate in the project.
+
+### Notification module
+This module takes care of sending various types of notifications to users, enhancing their interaction with the application.
+
+### Camera module
+The Camera Module within our modular monolith architecture primarily serves as the interface to connect with the API provided by the Wildlife AI cameras. This allows users to adjust camera settings while they are using our application when they are physically close to the camera location.
+In this module, we keep very little information about the user essentially retaining only a unique user identifier associated with the camera's owner.
+Furthermore, this module provides the functionality to configure where notifications should be sent when the camera detects a wildlife species. Users can set their preferred notification endpoint, ensuring they are promptly informed when wildlife is spotted.
+
+### Multimedia module
+Multimedia module encompasses handling image and video data once they are retrieved from camera. In our application, this means that users can upload, store, retrieve, and take notes about the wildlife species they spotted in the images or videos. This module is essential because it deals with the core media files that our application relies on for integrations with other partners and vendors. If necessary, we can use CDN and other caching methods to bring data closer to the user to speed things up and make the data load faster.
+
+### Integration module
+The Integrations module allows Wildlife AI camera users to connect with various services, like camera trap labelling and expert platforms, and data sharing with the community. It achieves this by making individual plugins for each integration, making it adaptable and future-ready for adding more plugins. These plugins connect with partner APIs and help manage data interchange among partner APIs. This module uses a micro kernel architecture to support the interoperability characteristic.
+
+### Workflow module
+The Workflow module exposes APIs designed to efficiently manage and coordinate tasks across all the above modules within the Wildlife AI application to support certain expensive use cases.
 
 # Long Term Expansions
 * User purchasing can be done in the same portal by eliminating user registration by admin person
