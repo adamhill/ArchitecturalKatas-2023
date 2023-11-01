@@ -163,6 +163,8 @@ The linked ADRs contain the primary architectural decisions regarding the propos
 
 [ADR 005](ADRs/ADR005%20-%20Integrations.md) Integrations
 
+[ADR 006](ADRs/ADR006-MicroKernel.md) Micro kernel architecture
+
 
 # References
 1. Software Architecture Patterns, 2nd Edition by Mark Richards
