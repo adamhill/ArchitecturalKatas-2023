@@ -26,6 +26,7 @@ The Integrations module also takes on the responsibility of aggregating all APIs
 
 ## Related ADRs
 [ADR 006](../ADRs/ADR006-MicroKernel.md)
+
 [ADR 003](../ADRs/ADR003-Processing%20with%203rd%20Parties%20and%20Edge%20Computing.md)
 
 ## Summary
