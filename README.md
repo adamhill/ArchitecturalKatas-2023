@@ -113,11 +113,6 @@ The Domain Design section of the Wildlife AI architecture outlines the structure
 
 [Integration Domain](domain/Integrations-module.md) serves as a crucial bridge connecting the Wildlife AI business with a diverse spectrum of services and platforms.
 
-# 4.1 Actors Overvew
-This shows the relationships between all the Actors in the Wildlife.ai system,
-
-[**Insert diagram of Actors**]
-
 # 5. System Architecture
 
 Our application is designed to meet the [needs](#22-requirements) specified by Wildlife AI, which includes managing users, handling cameras, sending notifications, working with multimedia like photos and videos, and sharing data with our partners and vendors. To make it organized, we've assigned each domain to its own module in our proposed solution.
