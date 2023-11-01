@@ -4,8 +4,6 @@ The Camera domain allows the Camera to communicate with the Notification Domain 
 
 Our design recommends the used of a simple email message that is sent to the Notification endpoint
 
-[**LINK TO DOMAIN DIAGRAM**]
-
 ## Components
 - A network connection to send out the message immediately
 - A file system to store the "identification payload" and possibly the message if the camera is offline at the time
@@ -16,10 +14,10 @@ Our design recommends the used of a simple email message that is sent to the Not
 
 
 ### Core System
-- A networking stack that can handle SMTP and HTTP
+- A networking stack that can handle SMTP or HTTP
 
 #### 1. Connection service
-
+The connection service configures, authorizes and stores the information the Camera needs to communicate with the Notificiation system.
 
 #### 2. Messaging Service
 Two types of messages need to be able to be handled
