@@ -4,7 +4,7 @@ This is the GitHub repository for a solution created by team Wonderous Toys duri
 This solution emphasizes:
 - **Simplicity**: Mobile first, simple Pub-Sub for Notifcations, significant control for local camera owners
 - **Low Cost**: Few and small re-occuring infrastructure charges, Modular monolith when we need it. Pre-existing use of users mobile devices.
-- **Autonomy**: Could be implemented without backend servers if needed (100% email Notifications)
+- **Autonomy**: Could be implemented locally by the user without backend servers if needed (100% email Notifications)
 
 
 # 2. Problem Space
