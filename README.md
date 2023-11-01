@@ -1,6 +1,12 @@
 # 1. Wonderous Toys
 This is the GitHub repository for a solution created by team Wonderous Toys during the 2023 O'Reilly Architectural Kata. It contains a proposed architecture for Wildlife.ai project for an open-source wildlife camera that will enable more efficient species conservation efforts worldwide.
 
+This solution emphasizes:
+- **Simplicity**: Mobile first, simple Pub-Sub for Notifcations, significant control for local camera owners
+- **Low Cost**: Few and small re-occuring infrastructure charges, Modular monolith when we need it. Pre-existing use of users mobile devices.
+- **Autonomy**: Could be implemented without backend servers if needed (100% email Notifications)
+
+
 # 2. Problem Space
 
 ## 2.1 Purpose
