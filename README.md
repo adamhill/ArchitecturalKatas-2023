@@ -163,7 +163,7 @@ The linked ADRs contain the primary architectural decisions regarding the propos
 
 [ADR 005](ADRs/ADR005%20-%20Integrations.md) Integrations
 
-[ADR 006](ADRs/ADR006-MicroKernel.md) Micro kernel architecture
+[ADR 006](ADRs/ADR006-MicroKernel.md) Micro kernel architecture to connect with other partners and vendors.
 
 
 # References
