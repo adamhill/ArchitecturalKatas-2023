@@ -157,7 +157,7 @@ The linked ADRs contain the primary architectural decisions regarding the propos
 
 [ADR 002](ADRs/ADR002-ModularMonolith.md) Modular monolith architecture proposes using the modular monolith architecture style to develop the application, ensuring ease of understanding, building, deploying, and modifying while being cost-effective and flexible in design.
 
-[ADR 003](ADRs/ADR003-Processing%20with%203rd%20Parties%20and%20Edge%20Computing) Processing with 3rd Parties and Edge Computing proposes moving data processing to 3rd parties and leveraging edge computing for the Wildlife.ai project to enhance cost efficiency, sustainability, scalability, and data security while simplifying the architecture.
+[ADR 003](ADRs/ADR003-Processing%20with%203rd%20Parties%20and%20Edge%20Computing.md) Processing with 3rd Parties and Edge Computing proposes moving data processing to 3rd parties and leveraging edge computing for the Wildlife.ai project to enhance cost efficiency, sustainability, scalability, and data security while simplifying the architecture.
 
 [ADR 004](ADRs/ADR004%20-%20Ease%20of%20Use%20-%20Mobile%20App%20Only.md) Easy of Use proposes the use of a mobile app as the primary interaction model for Wildlife.ai.
 
