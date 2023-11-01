@@ -99,13 +99,13 @@ The Domain Design section of the Wildlife AI architecture outlines the structure
 ![Domain identification excercise](figures/EventStorming.drawio.svg "Domain Identificaiton")
 
 ## Domain Capabilities In-depth
-[User Domain](domain/user-domain.md)
+[User Domain](domain/user-domain.md) places users at the forefront of the system, emphasizing user-centric control and interaction with the wildlife cameras and associated functionalities.
 
-[Multimedia Domain](domain/multimedia-domain.md)
+[Multimedia Domain](domain/multimedia-domain.md) enables the Wildlife AI Mobile App to receive images from the Wildlife AI cameras.
 
-[Notification Domain](domain/notification-domain.md)
+[Notification Domain](domain/notification-domain.md) enables the Wildlife AI cameras to send short notifications to the mobile app.
 
-[Integration Domain](domain/Integrations-module.md)
+[Integration Domain](domain/Integrations-module.md) serves as a crucial bridge connecting the Wildlife AI business with a diverse spectrum of services and platforms.
 
 # 4.1 Actors Overvew
 This shows the relationships between all the Actors in the Wildlife.ai system,
