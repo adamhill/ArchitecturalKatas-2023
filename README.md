@@ -161,9 +161,7 @@ The linked ADRs contain the primary architectural decisions regarding the propos
 
 [ADR 004](ADRs/ADR004%20-%20Ease%20of%20Use%20-%20Mobile%20App%20Only.md) Easy of Use proposes the use of a mobile app as the primary interaction model for Wildlife.ai.
 
-[ADR 005](ADRs/ADR005%20-%20Integrations.md) Integrations
-
-[ADR 006](ADRs/ADR006-MicroKernel.md) Micro kernel architecture to connect with other partners and vendors.
+[ADR 005](ADRs/ADR006-MicroKernel.md) Micro kernel architecture to connect with other partners and vendors.
 
 
 # References
