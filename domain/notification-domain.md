@@ -7,10 +7,6 @@ This design allows to easily extend the short messages the camera can send based
 
 ## Components
 
-### Plugins
-
-Each integration with partners and vendors is encapsulated within an individual plugin, with each plugin exposing its distinctive set of APIs. Internally, these plugins are configurable, enabling them to efficiently communicate with their respective partner APIs and function as adapters for data manipulation when exchanging information between image data and partner APIs. The module is constructed to smoothly accommodate future integrations, facilitating the incorporation of new plugins into the ecosystem.
-
 ### Core System
 Core system has two components
 
@@ -25,7 +21,7 @@ The camera notifiation settings record the email address of its operators as wel
 
 ## Related ADRs
 
-[ADR 001](../ADRs/ADR004%20-%20Ease%20of%20Use%20-%20Mobile%20App%20Only.md)
+[ADR 001](../ADRs/ADR001-EventDriven.md)
 
 ## Summary
 In summary, the notification domain is the main communication system for the Wildlife AI's cameras, ensuring that they can transmit short messages in near real time.
