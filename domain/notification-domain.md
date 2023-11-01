@@ -7,9 +7,6 @@ This design allows to easily extend the short messages the camera can send based
 
 ## Components
 
-### Core System
-Core system has two components
-
 #### 1. Google's Pub/Sub service
 
 Pub/Sub is an asynchronous and scalable messaging service that decouples services producing messages from services processing those messages. Pub/Sub allows services to communicate asynchronously, with latencies on the order of 100 milliseconds. Pub/Sub will relay the API calls to email messages to the camera operators.
