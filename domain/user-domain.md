@@ -25,6 +25,10 @@ The User Domain encompasses features that allow users to manage their preference
 ### Community Involvement and Coordination
 For community-driven projects and collaborations, the User Domain facilitates community involvement and coordination. Users can engage with other enthusiasts, experts, and non-profit organizations to plan and coordinate projects within a specific region. The platform also supports project management by providing tools to measure success metrics and project coordination.
 
+## Related ADRs
+
+[ADR 004](../ADRs/ADR004%20-%20Ease%20of%20Use%20-%20Mobile%20App%20Only.md)
+
 ## Summary
 
 In summary, the User Domain is a central component of the Wildlife AI architecture that prioritizes user engagement and control. By providing a user-friendly mobile app interface, robust video analysis capabilities, and seamless data sharing features, this domain empowers users to actively participate in wildlife conservation efforts. It enhances the overall user experience while promoting collaboration and community involvement.

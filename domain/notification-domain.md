@@ -25,7 +25,7 @@ The camera notifiation settings record the email address of its operators as wel
 
 ## Related ADRs
 
-[ADR 001](ADRs/ADR004%20-%20Ease%20of%20Use%20-%20Mobile%20App%20Only.md)
+[ADR 001](../ADRs/ADR004%20-%20Ease%20of%20Use%20-%20Mobile%20App%20Only.md)
 
 ## Summary
 In summary, the notification domain is the main communication system for the Wildlife AI's cameras, ensuring that they can transmit short messages in near real time.

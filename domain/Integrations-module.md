@@ -25,7 +25,7 @@ The Integrations module also takes on the responsibility of aggregating all APIs
 
 
 ## Related ADRs
-
+[ADR 005](../ADRs/ADR005%20-%20Integrations.md)
 
 ## Summary
 In summary, the Integrations module is the backbone of Wildlife AI's integration strategy, ensuring that Wildlife AI can effectively collaborate with partners and vendors, both now and in the future. Its micro-kernel architecture and the dual roles of API aggregation and UI component hosting make it a crucial part of the system, enhancing Wildlife AI's ability to harness the power of external services while maintaining a cohesive and efficient user experience.
