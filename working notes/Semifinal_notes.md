@@ -60,4 +60,17 @@ Link to ADRs in different part of the solution
 * Wildlife Watchers
 * AnimAI (maybe https://github.com/plmsprd/AnimAI)
 
+# Templates
+We could create ADRs to explain why we use each of them
+https://github.com/iptch/2022-fall-architectural-katas/tree/main#content
+kata as an example as it is easy to organize our thoughts and solutions in an easy way.
+
+as a go-by. Its all draw.io symbols and we are keeping the blue / orange color scheme
+
+https://www.kamilgrzybek.com/blog/posts/modular-monolith-domain-centric-design
+
+https://time.is/1930_17_November_2023_in_NewYork/Texas/Calgary/India
+
+
+
 
