@@ -30,7 +30,7 @@ TABLE OF CONTENTS
 - [References](#references)
 
 # 1. Wonderous Toys
-This is the GitHub repository for a solution created by team Wonderous Toys during the [2023 O'Reilly Architectural Kata](https://learning.oreilly.com/featured/architectural-katas/). It contains a proposed architecture for Wildlife.ai project for an open-source wildlife camera that will enable more efficient species conservation efforts worldwide.
+This is the GitHub repository for a solution created by team Wonderous Toys during the [2023 O'Reilly Architectural Kata](https://learning.oreilly.com/featured/architectural-katas/). It contains a proposed architecture for [Wildlife.ai](https://wildlife.ai/) project for an open-source wildlife camera that will enable more efficient species conservation efforts worldwide.
 
 This solution emphasizes:
 - **Simplicity**: Mobile first, simple Pub-Sub for Notifcations, significant control for local camera owners
@@ -62,8 +62,8 @@ The API for the specific camera hasn’t been selected, allowing teams to specif
 ![Business Overview](figures/business-overview.drawio.png "Business Overview")
 
 ## 2.4 Assumptions
-* Camera will be purchased from Wildlife AI partner or User builds it themselves using Wildlife AI open source.
-* User can download Mobile App from the stores.
+* Camera Aquisition: Camera will be purchased from Wildlife AI, partner, or User builds it themselves using Wildlife AI open source.
+* Mobila App Installation: User can download Mobile App from the stores.
 * Any integrations with partners and vendors applications can be configured in the application.
 * Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
 * Financial Constraints: There are budgetary constraints on the project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
