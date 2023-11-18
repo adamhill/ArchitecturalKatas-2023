@@ -53,12 +53,22 @@ Link to ADRs in different part of the solution
 # Create a 5 minute marketing video
 
 # Semi Finalist
-* Wondrous Toys
+* Wonderous Toys
 * Rapid Response (maybe https://github.com/dscherbak/rapid-response-katas)
 * CELUS Ceals
 * WildCode Wranglers
 * Wildlife Watchers
 * AnimAI (maybe https://github.com/plmsprd/AnimAI)
+
+# Semi Finalist ***Videos*** from Previous Years
+  
+- [2021](https://www.youtube.com/watch?v=EicfaYa5nDg)
+
+2022 is behind the O'Reilly Safari paywall but has a free trial
+
+- [2022 - Spring](https://www.oreilly.com/library/view/architectural-katas-spring/0636920743217/)
+
+- [2022 - Fall](https://www.oreilly.com/library/view/architectural-katas-fall/0636920824275/)
 
 # Templates
 We could create ADRs to explain why we use each of them
