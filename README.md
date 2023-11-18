@@ -197,7 +197,8 @@ The linked ADRs contain the primary architectural decisions regarding the propos
 
 
 # References
-1. Software Architecture Patterns, 2nd Edition by Mark Richards
-2. https://www.kamilgrzybek.com/blog/posts/modular-monolith-domain-centric-design
-3. Architecture style worksheet https://www.developertoarchitect.com/downloads/architecture-styles-worksheet.pdf
-4. https://github.com/Sairyss/domain-driven-hexagon
+1. [Software Architecture Patterns, 2nd Edition by Mark Richards](https://learning.oreilly.com/library/view/software-architecture-patterns/9781098134280/)
+2. [Modular monolith: domain-centric design](https://www.kamilgrzybek.com/blog/posts/modular-monolith-domain-centric-design)
+3. [Architecture style worksheet](https://www.developertoarchitect.com/downloads/architecture-styles-worksheet.pdf)
+4. [Domain-Driven Hexagon](https://github.com/Sairyss/domain-driven-hexagon
+)
