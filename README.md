@@ -95,7 +95,7 @@ In summary, focusing on prototype testing the product, ecological conservation, 
 
 ## 3.2 Architecture Characteristics
 
-After conducting a thorough analysis of Wildlife AI's requirements and key business drivers, we have identified the primary architectural characteristics that the system should incorporate. These key characteristics include Feasibility, Domain Part Abstraction, and Simplicity.
+After conducting a thorough analysis of Wildlife AI's [requirements](#22-requirements) and key business drivers, we have identified the primary architectural characteristics that the system should incorporate. These key characteristics include Feasibility, Domain Part Abstraction, and Simplicity.
 
 1. **Feasibility:** This architectural attribute ensures that the system's design aligns with the practicality of implementation within the available resources, budget, and time constraints. It underscores the significance of achieving rapid market access and supporting ecological conservation to further Wildlife AI's mission.
 
@@ -115,7 +115,7 @@ By prioritizing these architectural characteristics, we aim to develop a system 
 
 ## 3.3 Architecture Style Proposed
 
-Based on the architectural characteristics we've identified, we suggest a combination of **Modular Monolith** and **Micro kernel architecture** to build the application. In this approach, we organize the different aspects of the functionalities into modules and one of these modules uses micro-kernel design. Each of these modules has its own well defined API's that serve as a way for them to communicate with one another and the user interface components. This setup makes sure that the application is well-structured and can efficiently work with different integrations to support the business requirements.
+Based on the architectural characteristics we've identified, we suggest a combination of **Modular Monolith**, **Micro kernel**, and **Event-Driven** architectures to build the application. In this approach, we organize the different aspects of the functionalities into modules and one of these modules uses micro-kernel design. Each of these modules has its own well defined API's that serve as a way for them to communicate with one another and the user interface components. In addition, to address the neal-real time communication request of this problem and its contraint of uncertain internet access, the event-driven architecture can sucessfully address the needs. This setup makes sure that the application is well-structured and can efficiently work with different integrations to support the business requirements.
 
 ![Architecture Style](figures/ArchitectureStyle.png "Architecture Style")
 
