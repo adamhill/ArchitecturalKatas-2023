@@ -117,7 +117,7 @@ By prioritizing these architectural characteristics, we aim to develop a system 
 
 Based on the architectural characteristics we've identified, we suggest a combination of **Modular Monolith** and **Micro kernel architecture** to build the application. In this approach, we organize the different aspects of the functionalities into modules and one of these modules uses micro-kernel design. Each of these modules has its own well defined API's that serve as a way for them to communicate with one another and the user interface components. This setup makes sure that the application is well-structured and can efficiently work with different integrations to support the business requirements.
 
-
+![Architecture Style](figures/ArchitectureStyle.png "Architecture Style")
 
 
 
