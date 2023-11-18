@@ -1,3 +1,6 @@
+TABLE OF CONTENTS
+=================
+- [TABLE OF CONTENTS](#table-of-contents)
 - [1. Wonderous Toys](#1-wonderous-toys)
 - [2. Problem Space](#2-problem-space)
   - [2.1 Purpose](#21-purpose)
