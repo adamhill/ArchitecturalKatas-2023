@@ -33,7 +33,7 @@ TABLE OF CONTENTS
 This is the GitHub repository for a solution created by team Wonderous Toys during the [2023 O'Reilly Architectural Kata](https://learning.oreilly.com/featured/architectural-katas/). It contains a proposed architecture for [Wildlife.ai](https://wildlife.ai/) project for an open-source wildlife camera that will enable more efficient species conservation efforts worldwide.
 
 This solution emphasizes:
-- **Simplicity**: Mobile first, simple Pub-Sub for Notifcations, significant control for local camera owners
+- **Simplicity**: Mobile first, simple Pub/Sub for Notifcations, significant control for local camera owners
 - **Low Cost**: Few and small re-occuring infrastructure charges, Modular monolith when we need it. Pre-existing use of users mobile devices.
 - **Autonomy**: Could be implemented locally by the user without backend servers if needed (100% email Notifications)
 
@@ -64,12 +64,12 @@ The API for the specific camera hasn’t been selected, allowing teams to specif
 ## 2.4 Assumptions
 * Camera Aquisition: Camera will be purchased from Wildlife AI, partner, or User builds it themselves using Wildlife AI open source.
 * Mobila App Installation: User can download Mobile App from the stores.
-* Any integrations with partners and vendors applications can be configured in the application.
+* Integrations availability: Any integrations with partners and vendors applications can be configured in the application.
 * Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
 * Financial Constraints: There are budgetary constraints on the project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
 * Limited User Base: The user base comprises only a few hundred users. Assuming each user will only hava a small number of cameras. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient. It is more practical to assume that mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like data uploading and remote camera control.
 * Biologists, enthusiasts, and volunteers have different levels of technical know-how. Since many tasks are done by volunteers, it would be great if the solution is simple for anyone to use.
-* When we talk about edge computing, it means that your phones and tablets have the ability to both edit and process images.
+* Edge Computing: Users' phones and tablets have the ability to both edit and process images.
 
 # 3. Solution Space
 
