@@ -15,8 +15,11 @@
 >
 > We are Wonderous Toys and we are here to present our solution to the Wildlife.ai Kata. Wildlife.ai is a New Zealand charity that wants to build rugged, outdoor, Open Source cameras that anyone can download the plans for and build. The cameras can take pictures of small creatures, triggered by motion and get identified by a **local** AI module running on a microcontroller in the camera. They also would like to aggregate this identification data for sharing with other wildlife systems, retrain their AI models based on the local fauna observed and  periodically refresh the AI models on the camera.
 >
-> There are some particualr challenges we will address with our proposed solution. First off this is an open source solution so we will consider mainly open source systems, frameworks, languages and specifications when we are able to. Secondly, There are only 100's of users anticipated by Wildlife.ai so we wont need a very scalable infrastructure. In-fact we have the idea of Wildlife.ai's software team being able to break out modules as needed into server side components that could bw run in the cloud or at a nature area with their BYOC (bring your own computer) IT.
+> [**PRETTY PICTURES OF WILDLIFE.AI's CAMERA AND PUBLICITY MATTER**]
+>
+> There are some particualr challenges we will address with our proposed solution. First off this is an open source solution so we will consider mainly open source systems, frameworks, languages and specifications when we are able to. Secondly, There are only 100's of users anticipated by Wildlife.ai so we wont need a very scalable infrastructure. In-fact we have the idea of Wildlife.ai's software team being able to break out modules as needed into server side components that could be run in the cloud or at a nature area with their BYOC (bring your own computer) IT.
 > 
+> [**SHOW BUILD OF COMPONENTS BEING LIFTED OUT OF THE MOBILE APP AND INTO A CONTAINER**]
 
 **[CAN WE MAKE A VENN DIAGRAM OUT OF THIS]
 
