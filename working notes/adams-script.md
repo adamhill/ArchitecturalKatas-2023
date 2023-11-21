@@ -21,7 +21,8 @@
 > 
 > [**SHOW BUILD OF COMPONENTS BEING LIFTED OUT OF THE MOBILE APP AND INTO A CONTAINER**]
 
-**[CAN WE MAKE A VENN DIAGRAM OUT OF THIS]
+Our solution emphasizes: Simplicity, Frugality (I propose we change to this word in the README) and Autonomy
+[**CAN WE MAKE A VENN DIAGRAM OUT OF THIS??**]
 
 ## The Meat
 (PubSub, Camera, Mobile)
