@@ -63,7 +63,7 @@ The API for the specific camera hasn’t been selected, allowing teams to specif
 
 ## 2.4 Assumptions
 * Camera Aquisition: Camera will be purchased from Wildlife AI, partner, or User builds it themselves using Wildlife AI open source.
-* Mobila App Installation: User can download Mobile App from the stores.
+* Mobile App Installation: User can download Mobile App from the stores.
 * Integrations availability: Any integrations with partners and vendors applications can be configured in the application.
 * Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
 * Financial Constraints: There are budgetary constraints on the project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
