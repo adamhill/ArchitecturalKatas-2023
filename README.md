@@ -157,7 +157,9 @@ In addition to these domain modules, we've created a special module called the w
 The primary responsibility of the user module is managing user accounts and information that's specific to each user. People using the application can create their accounts, log in (optionally), and view their profiles, which makes the whole experience more personalized for them. Additionally, within this module, users can choose their notification preferences to decide how they want to be notified about things in the app. This way, users have control over their interaction with the application. Additionally, they can invite other users who would like to participate in the project.
 
 ### Notification module
-This module takes care of sending various types of notifications to users, enhancing their interaction with the application.
+The Notification Module serves as a vital component within the Wildlife AI system, facilitating the seamless delivery of near real-time and relevant notifications to users. It plays a crucial role in timely camera nofitications and ensuring that users stay informed about significant events detected by the Wildlife AI cameras.
+This module is responsible for sending instant alert notifications to users when a Wildlife AI camera detects the presence of target wildlife species. The notifications are designed to be concise, providing users with essential information about the detected species.
+In addition, users can configure to receive important camera notifications such as battery alerts and other similar issues.
 
 ### Camera module
 The Camera Module within our modular monolith architecture primarily serves as the interface to connect with the API provided by the Wildlife AI cameras. This allows users to adjust camera settings while they are using our application when they are physically close to the camera location.
