@@ -35,7 +35,7 @@ This is the GitHub repository for a solution created by team Wonderous Toys duri
 This solution emphasizes:
 - **Simplicity**: Mobile first, simple Pub/Sub for Notifcations, significant control for local camera owners
 - **Frugality*: Few and small re-occuring infrastructure charges, Modular monolith when we need it. Pre-existing use of users mobile devices.
-- **Autonomy**: *Server* pieces could be lifted and shifted out of the mobile app and into contaners and could be hosted locally (Bring-Your-Own-Cloud) by the user / nature area without backend servers if needed (100% email Notification or  Mesh networking if needed)
+- **Autonomy**: *Server* pieces could be lifted and shifted out of the mobile app and into contaners and could be hosted locally (Bring-Your-Own-Cloud) by the user / nature area without backend servers if needed (100% email Notification or Mesh networking if needed)
 
 
 # 2. Problem Space
@@ -106,6 +106,7 @@ After conducting a thorough analysis of Wildlife AI's [requirements](#22-require
 Furthermore, we aim to provide the following additional architectural features:
 
 4. **Interoperability:** Interoperability means that our system can easily talk to and work with the tools and services our partners and vendors use. It helps Wildlife AI users to work well together with partners, vendors, and other ecosystem members to enhance wildlife conservation efforts.
+
 5. **Security:** Furthermore, security being an implicit characteristic, is a crucial part of the system design. We are determined to put strong protections in place to keep all data in our systems safe, making sure data stays private and shielding it from any possible threats.
 
 6. **Workflow:** The introduction of workflow capabilities into the system streamlines processes and optimizes the flow of data and actions. It enhances operational efficiency and ensures that tasks are automated and well-coordinated within the solution.
@@ -114,17 +115,13 @@ By prioritizing these architectural characteristics, we aim to develop a system 
 
 ## 3.3 Architecture Style Proposed
 
-Based on the architectural characteristics we've identified, we suggest a combination of **Modular Monolith**, **Micro kernel**, and **Event-Driven** architectures to build the application. In this approach, we organize the different aspects of the functionalities into modules and one of these modules uses micro-kernel design. Each of these modules has its own well defined API's that serve as a way for them to communicate with one another and the user interface components. In addition, to address the neal-real time communication request of this problem and its contraint of uncertain internet access, the event-driven architecture can sucessfully address the needs. This setup makes sure that the application is well-structured and can efficiently work with different integrations to support the business requirements.
+Based on the architectural characteristics we've identified, we suggest a combination of **Modular Monolith**, **Micro kernel**, and **Event-Driven** architectures to build the application. See the image below with the mapping between architecture characteristics mentioned above and the Architecture Styles proposed in this solution. In this approach, we organize the different aspects of the functionalities into modules and one of these modules uses micro-kernel design. Each of these modules has its own well defined API's that serve as a way for them to communicate with one another and the user interface components. In addition, to address the neal-real time communication request of this problem and its contraint of uncertain internet access, the event-driven architecture can sucessfully address the needs. This setup makes sure that the application is well-structured and can efficiently work with different integrations to support the business requirements.
 
 ![Architecture Style](figures/ArchitectureStyle.png "Architecture Style")
-
-
 
 ## 3.4 Other Considerations
 
 Additionally, we recognize the importance of the system's ability to adapt and grow, especially when some users in the Wildlife AI's open-source community require more resources than others. In situations like these, as business needs change, the system should be capable of supporting growth by seamlessly scaling, potentially moving one or more services outside of the (modular-monolithic) application ecosystem to microservices. This flexibility guarantees that Wildlife AI's technical setup stays in sync with user's growing mission and operational requirements.
-
-
 
 # 4. Domain Design
 
@@ -194,7 +191,7 @@ The linked ADRs contain the primary architectural decisions regarding the propos
 
 [ADR 004](ADRs/ADR004%20-%20Ease%20of%20Use%20-%20Mobile%20App%20Only.md) Easy of Use proposes the use of a mobile app as the primary interaction model for Wildlife.ai.
 
-[ADR 005](ADRs/ADR006-MicroKernel.md) Micro kernel architecture to connect with other partners and vendors.
+[ADR 005](ADRs/ADR005-MicroKernel.md) Micro kernel architecture to connect with other partners and vendors.
 
 
 # References
