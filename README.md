@@ -105,9 +105,8 @@ After conducting a thorough analysis of Wildlife AI's [requirements](#22-require
 
 Furthermore, we aim to provide the following additional architectural features:
 
-4. **Security:** Furthermore, security being an implicit characteristic, is a crucial part of the system design. We are determined to put strong protections in place to keep all data in our systems safe, making sure data stays private and shielding it from any possible threats.
-
-5. **Interoperability:** Interoperability means that our system can easily talk to and work with the tools and services our partners and vendors use. It helps Wildlife AI users to work well together with partners, vendors, and other ecosystem members to enhance wildlife conservation efforts.
+4. **Interoperability:** Interoperability means that our system can easily talk to and work with the tools and services our partners and vendors use. It helps Wildlife AI users to work well together with partners, vendors, and other ecosystem members to enhance wildlife conservation efforts.
+5. **Security:** Furthermore, security being an implicit characteristic, is a crucial part of the system design. We are determined to put strong protections in place to keep all data in our systems safe, making sure data stays private and shielding it from any possible threats.
 
 6. **Workflow:** The introduction of workflow capabilities into the system streamlines processes and optimizes the flow of data and actions. It enhances operational efficiency and ensures that tasks are automated and well-coordinated within the solution.
 
