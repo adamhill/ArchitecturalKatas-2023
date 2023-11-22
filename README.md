@@ -81,19 +81,19 @@ The project operates within specific constraints:
 > Assumption: Wildlife ai being a charitable trust we assume there will be budgetary constraints for this project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
 2. <a name="opensource">Wildlife AI want to build an open-source camera integrated with artificial intelligence for species conservation efforts.</a>
 > Assumption:  The software soution serves as an add-on to the camera, facilitating data sharing with various platforms, enthusiasts, and biologists. Both the camera and the accompanying software will be open-source, catering to users with varying levels of technical expertise.
-4. Camera hardware specifications:
+3. Camera hardware specifications:
   * Ultra-low-power microcontrollers (up to 512KB Flash)
   * Comprised of interchangeable modules (e.g., optical sensor, IR lights, transceiver module, batteries) within a watertight 3D-printed enclosure.
-5. Camera Aquisition:
+4 Camera Aquisition:
 > Assumption: Camera will be purchased from Wildlife AI, partner, or User builds it themselves using Wildlife AI open source.
-6. Mobile App Installation: User can download Mobile App from the app stores.
-7. Integrations availability: Any integrations with partners and vendors applications can be configured in the application.
-8. Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
-10. User Base: The user base comprises only a few hundred users and be spread globally.
+  * Mobile App Installation: User can download Mobile App from the app stores.
+  * Integrations availability: Any integrations with partners and vendors applications can be configured in the application.
+  * Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
+5. User Base: The user base comprises only a few hundred users and be spread globally.
 > Assumption: Each user will only hava a small number of cameras. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient.
-11. <a name="userexpertise">User skill sets:</a>
+6. <a name="userexpertise">User skill sets:</a>
 > Assumption: Biologists, enthusiasts, and volunteers have different levels of technical know-how. Since many tasks are done by volunteers, it would be great if the solution is simple for anyone to use.
-12. User Device capability:
+7. User Device capability:
 > Assumption: Mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like edit & process images, data uploading and remote camera control.
 
 # 3. Solution Space
