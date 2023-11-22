@@ -1,6 +1,5 @@
-TABLE OF CONTENTS
+TABLE OF CONTENTS <!-- omit from toc --> 
 =================
-- [TABLE OF CONTENTS](#table-of-contents)
 - [1. Welcome to Wonderous Toys](#1-welcome-to-wonderous-toys)
 - [2. Problem Space](#2-problem-space)
     - [Wildlife Watcher](#wildlife-watcher)
