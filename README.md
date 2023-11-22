@@ -29,7 +29,7 @@ TABLE OF CONTENTS
 - [ADR's](#adrs)
 - [References](#references)
 
-# 1. Wonderous Toys
+# 1. Welcome to Wonderous Toys
 This is the GitHub repository for a solution created by team Wonderous Toys during the [2023 O'Reilly Architectural Kata](https://learning.oreilly.com/featured/architectural-katas/). It contains a proposed architecture for [Wildlife.ai](https://wildlife.ai/) project for an open-source wildlife camera that will enable more efficient species conservation efforts worldwide.
 
 This solution emphasizes:
@@ -40,36 +40,59 @@ This solution emphasizes:
 
 # 2. Problem Space
 
-## 2.1 Purpose
-[Wildlife.ai](https://wildlife.ai/), a charity using AI to accelerate wildlife conservation, wants to build an open-source wildlife cameras that gets triggered based on the movement of target animals, identifies the species on the device and reports the observation in near real-time to biologists, enabling more efficient species conservation efforts worldwide.
+### Wildlife Watcher
+[Wildlife.ai](https://wildlife.ai/) is a charitable trust that utilizes artificial intelligence to expedite wildlife conservation. Collaborating with grassroots wildlife conservation projects, they develop open-source solutions employing machine learning to accelerate conservation efforts. Additionally, they organize community events, seminars, and educational activities aimed at creating and maintaining machine-learning solutions to reduce the current rate of species extinction.
 
-## 2.2 Requirements
-- Users should be able to communicate with the camera using a mobile app (to set the cameras on/off and adjust settings without opening the cameras)
-- Users should be able to analyze the videos using common camera trap labelling platforms [(Wildlife Insights](https://wildlifeinsights.org/), [TrapTagger](https://wildeyeconservation.org/traptagger) or [Trapper](https://gitlab.com/trapper-project/trapper))
-- Users should be able to publish frames from the videos to iNaturalist for experts to help with the identification of the species
-- Users should be able to easily train edge models, using their own labelled videos, and upload the models to the cameras (maybe using third party services like [Roboflow](https://roboflow.com/), [Edge Impulse](https://edgeimpulse.com/) or [TensorFlow Lite](https://www.tensorflow.org/lite))
-- Users should be able to publish the species occurrences to [GBIF](https://www.gbif.org/) using the [Camtrap DP](https://tdwg.github.io/camtrap-dp/), [data exchange format](https://tdwg.github.io/camtrap-dp/)
-- Cameras should be able to process the footage on the device and send a small alert message to the users via LoraWan, 3G or satellite
+### Objective
+The project aims to build an open-source wildlife camera that:
+* Triggers based on the movement of target animals,
+* Employs an AI model to identify captured species,
+* Reports observations in near real-time to biologists or other users.
 
-**Additional Context**
+### Users
+The intended users of the project include:
 
-The camera hardware will be a combination of ultra-low-power microcontrollers (up to 512KB Flash) and interchangeable modules (e.g. optical sensor, IR lights, transceiver module, batteries) enclosed in a watertight and 3D printed enclosure.
+* Biologists
+* Nature Enthusiasts
 
-The API for the specific camera hasn’t been selected, allowing teams to specify what behavior they might need from the hardware, helping the team choose appropriate hardware.
+### System Requirements
 
-## 2.3 High Level Overview
+* Users should be able to communicate with the camera using a mobile app,
+  * To set the cameras on/off,
+  * Adjust settings without opening the cameras
+* Users should be able to analyze the videos using common camera trap labelling platforms.
+  * [Wildlife Insights](https://wildlifeinsights.org/), [TrapTagger](https://wildeyeconservation.org/traptagger) or [Trapper](https://gitlab.com/trapper-project/trapper)
+* Users should be able to publish frames from the videos to [iNaturalist](https://www.inaturalist.org/) for experts to help identify the species.
+* Users should be able to train edge models easily
+  * Using their own labelled videos and uploading the models to the cameras
+  * Using third-party services [Roboflow](https://roboflow.com/), [Edge Impulse](https://edgeimpulse.com/) or [TensorFlow Lite](https://www.tensorflow.org/lite)
+* Users should be able to publish the species occurrences to
+  * [GBIF](https://www.gbif.org/) using the [Camtrap DP](https://tdwg.github.io/camtrap-dp/), [data exchange format](https://tdwg.github.io/camtrap-dp/)
+* Cameras should be able to process the footage on the device and send a small alert message to the users via
+  * LoraWan, 3G or satellite.
 
-![Business Overview](figures/business-overview.drawio.png "Business Overview")
+### Constraints and Assumptions
 
-## 2.4 Assumptions
-* Camera Aquisition: Camera will be purchased from Wildlife AI, partner, or User builds it themselves using Wildlife AI open source.
-* Mobile App Installation: User can download Mobile App from the stores.
-* Integrations availability: Any integrations with partners and vendors applications can be configured in the application.
-* Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
-* Financial Constraints: There are budgetary constraints on the project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
-* Limited User Base: The user base comprises only a few hundred users. Assuming each user will only hava a small number of cameras. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient. It is more practical to assume that mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like data uploading and remote camera control.
-* Biologists, enthusiasts, and volunteers have different levels of technical know-how. Since many tasks are done by volunteers, it would be great if the solution is simple for anyone to use.
-* Edge Computing: Users' phones and tablets have the ability to both edit and process images.
+The project operates within specific constraints:
+
+1. <a name="charitable">Wildlife ai operates as a charitable trust</a>
+> Assumption: Wildlife ai being a charitable trust we assume there will be budgetary constraints for this project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
+2. <a name="opensource">Wildlife AI want to build an open-source camera integrated with artificial intelligence for species conservation efforts.</a>
+> Assumption:  The software soution serves as an add-on to the camera, facilitating data sharing with various platforms, enthusiasts, and biologists. Both the camera and the accompanying software will be open-source, catering to users with varying levels of technical expertise.
+4. Camera hardware specifications:
+  * Ultra-low-power microcontrollers (up to 512KB Flash)
+  * Comprised of interchangeable modules (e.g., optical sensor, IR lights, transceiver module, batteries) within a watertight 3D-printed enclosure.
+5. Camera Aquisition:
+> Assumption: Camera will be purchased from Wildlife AI, partner, or User builds it themselves using Wildlife AI open source.
+6. Mobile App Installation: User can download Mobile App from the app stores.
+7. Integrations availability: Any integrations with partners and vendors applications can be configured in the application.
+8. Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
+10. User Base: The user base comprises only a few hundred users and be spread globally.
+> Assumption: Each user will only hava a small number of cameras. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient.
+11. <a name="userexpertise">User skill sets:</a>
+> Assumption: Biologists, enthusiasts, and volunteers have different levels of technical know-how. Since many tasks are done by volunteers, it would be great if the solution is simple for anyone to use.
+12. User Device capability:
+> Assumption: Mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like edit & process images, data uploading and remote camera control.
 
 # 3. Solution Space
 
@@ -95,21 +118,33 @@ In summary, focusing on prototype testing the product, ecological conservation, 
 
 ## 3.2 Architecture Characteristics
 
-After conducting a thorough analysis of Wildlife AI's [requirements](#22-requirements) and key business drivers, we have identified the primary architectural characteristics that the system should incorporate. These key characteristics include Feasibility, Domain Part Abstraction, and Simplicity.
+After conducting a thorough analysis of Wildlife AI's [requirements](#22-requirements) and key business drivers, we have identified the primary architectural characteristics that the system should incorporate. These key characteristics include Feasibility, Simplicity, Domain Part Abstraction and Interoperability.
 
-1. **Feasibility:** This architectural attribute ensures that the system's design aligns with the practicality of implementation within the available resources, budget, and time constraints. It underscores the significance of achieving rapid market access and supporting ecological conservation to further Wildlife AI's mission.
+1. **Feasibility/Cost-effective:** This architectural attribute ensures that the system's design aligns with the practicality of implementation within the available resources, budget, and time constraints.
+> Based on the financial constraints of being a charitable trust and to support the open-source initiative we want to propose a cost effective solution.
+[#charity](#charitable)
+[#open source initiative](#opensource)
 
-2. **Domain Part Abstraction:** The incorporation of domain part abstraction simplifies interactions within the system by hiding complex technical details and providing an intuitive interface with the help of API's. This abstraction streamlines the user experience, making it more user-friendly and reducing the learning curve.
 
-3. **Simplicity:** Simplicity highlights the value of a clear and efficient system design. It advocates for an architecture that is easily comprehensible, user-friendly, and maintainable, ultimately improving overall usability and reducing operational complexity. If the solution is to be open-sourced, it should cater to a broad range of users, spanning from individuals with limited technical knowledge to highly skilled professionals.
+2. **Simplicity:** Highlights the value of a clear and efficient system design. It advocates for an architecture that is easily comprehensible, user-friendly, maintainable and ultimately improving overall usability and reducing operational complexity.
+> The users who will be interacting with the system can have limited technical skillset, and given Wildlife AI support open-source initiative, we have preferred to design a solution that is simple to use and maintain.
+[#technical skill set](#userexpertise)
+[#open source initiative](#opensource)
+
+3. **Domain Part Abstraction:** The incorporation of domain part abstraction simplifies interactions within the system by hiding complex technical details and providing an intuitive interface with the help of API's. This abstraction streamlines the user experience, making it more user-friendly and reducing the learning curve.
+
+> YET TO BE WRITTERN
+
+4. **Interoperability:** Interoperability ensures that our system can seamlessly communicate with and function alongside the tools and services deployed by Wildlife's partners and vendors. It helps Wildlife AI users to work well together with partners, vendors, and other ecosystem members to enhance wildlife conservation efforts.
+> Based on the requirements, the system should be able to interact with the third party applications.
+[#system requirements](#system-requirements)
 
 Furthermore, we aim to provide the following additional architectural features:
 
-4. **Interoperability:** Interoperability means that our system can easily talk to and work with the tools and services our partners and vendors use. It helps Wildlife AI users to work well together with partners, vendors, and other ecosystem members to enhance wildlife conservation efforts.
+5. **Security:** Being an implicit characteristic, it is a crucial part of any software system design. We are determined to put strong protections in place to keep all data in our systems safe, making sure data stays private and shielding it from any possible threats.
 
-5. **Security:** Furthermore, security being an implicit characteristic, is a crucial part of the system design. We are determined to put strong protections in place to keep all data in our systems safe, making sure data stays private and shielding it from any possible threats.
 
-6. **Workflow:** The introduction of workflow capabilities into the system streamlines processes and optimizes the flow of data and actions. It enhances operational efficiency and ensures that tasks are automated and well-coordinated within the solution.
+6. **Workflow:** With the need to integrate with multiple third party applications, the system could incorporate workflow capabilities to support complex processes, optimizes the flow of data and actions. This ensures that tasks are automated and well-coordinated within the solution
 
 By prioritizing these architectural characteristics, we aim to develop a system that not only aligns with Wildlife AI's current requirements but also offers adaptability for future growth and evolution. Our approach is geared towards delivering a feasible, user-friendly, and secure system that seamlessly interacts with external services and optimizes workflow processes where necessary.
 
@@ -125,8 +160,9 @@ Additionally, we recognize the importance of the system's ability to adapt and g
 
 # 4. Domain Design
 
-## Overview 
+## Overview
 The Domain Design section of the Wildlife AI architecture outlines the structure and capabilities of various domains that together form a cohesive system for wildlife conservation. Each domain is specialized in its function, catering to different aspects of the overall solution. The design promotes a user-friendly and efficient approach to wildlife conservation, driven by advanced technologies and interdisciplinary expertise.
+
 
 ## Identification Of Domains
 <img src="figures/EventStorming.drawio.svg" alt="Domain identification excercise" width="600"/>
@@ -139,6 +175,8 @@ The Domain Design section of the Wildlife AI architecture outlines the structure
 [Notification Domain](domain/notification-domain.md) enables the Wildlife AI cameras to send short notifications to the mobile app.
 
 [Integration Domain](domain/Integrations-module.md) serves as a crucial bridge connecting the Wildlife AI business with a diverse spectrum of services and platforms.
+
+![Business Overview](figures/business-overview.drawio.png "Business Overview")
 
 # 5. System Architecture
 
@@ -198,5 +236,4 @@ The linked ADRs contain the primary architectural decisions regarding the propos
 1. [Software Architecture Patterns, 2nd Edition by Mark Richards](https://learning.oreilly.com/library/view/software-architecture-patterns/9781098134280/)
 2. [Modular monolith: domain-centric design](https://www.kamilgrzybek.com/blog/posts/modular-monolith-domain-centric-design)
 3. [Architecture style worksheet](https://www.developertoarchitect.com/downloads/architecture-styles-worksheet.pdf)
-4. [Domain-Driven Hexagon](https://github.com/Sairyss/domain-driven-hexagon
-)
+4. [Domain-Driven Hexagon](https://github.com/Sairyss/domain-driven-hexagon)
