@@ -64,7 +64,7 @@
 >
 >Now, let's delve into the architecture that powers this solution.
 >
-> We have opted for a simple solution, that doesnt require large tech resource
+> We have opted for a simple solution, that doesn't require a large amount tech resources.
 >
 > [**Show star chart**]
 >
@@ -87,7 +87,7 @@
   - **TCP/IP over WiFi or Ethernet** - A connection with a micro webserver exposing some API enpoints with REST / gRPC [Examples of microcontrollers that already do both or either]  [LoRaPipe](https://github.com/jgoerzen/lorapipe/blob/master/doc/lorapipe.1.md)
 
 ### Mobile
-- A key idea is to write the mobile app within an ecosystem that allows you to:
+- Another key idea is to write the mobile app within an ecosystem that allows you to:
   1. Use the same codebase for *at least* the Android and iOS app stores.
   2. If a server side Modular Monolith piece is needed, you can lift that domain out of the mobile code and not have to completely rewrite it for server use.
      1. The most suitble ecosystems for this are:
@@ -96,12 +96,14 @@
         3.  Angular Web views (web) & Hosted Angular Web Views (mobile) using Typescript
     1.  These components need to be able to run inside of a container to support the Modular Monolith style of server apps
 
->We also want to use a microkernel architecture piece to provide a unified facade to the the external services that the user might want to interface with this includes:
+>We will also use a microkernel architecture piece to provide a unified facade to the the external services that the user might want to interface with this includes:
 >
-> [**Build Microkernel modules**]
+> [**Build Microkernel modules list**]
 >
->- Labeling and sharing services
->- Model retraining
+> - Labeling and sharing services
+>   - iNaturalist, GBIF
+> - Model retraining
+>   - Edge Impulse, Tensorflow
 >- ?? ?? ??
 
 ## 3. Summary and Reinforcement of the Solution
