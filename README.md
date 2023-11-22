@@ -34,7 +34,7 @@ This is the GitHub repository for a solution created by team Wonderous Toys duri
 
 This solution emphasizes:
 - **Simplicity**: Mobile first, simple Pub/Sub for Notifcations, significant control for local camera owners
-- **Frugality*: Few and small re-occuring infrastructure charges, Modular monolith when we need it. Pre-existing use of users mobile devices.
+- **Frugality**: Few and small re-occuring infrastructure charges, Modular monolith when we need it. Pre-existing use of users mobile devices.
 - **Autonomy**: *Server* pieces could be lifted and shifted out of the mobile app and into contaners and could be hosted locally (Bring-Your-Own-Cloud) by the user / nature area without backend servers if needed (100% email Notification or Mesh networking if needed)
 
 
