@@ -91,8 +91,8 @@
   1. Use the same codebase for *at least* the Android and iOS app stores.
   2. If a server side Modular Monolith piece is needed, you can lift that domain out of the mobile code and not have to completely rewrite it for server use.
      1. The most suitble ecosystems for this are:
-        1.  The Xamarin / MAUI (mobile) & Blazor(web) using C#
-        2.  React Native (mobile) & React (web) using Typescript
+        1. The Xamarin / MAUI (mobile) & Blazor(web) using C#
+        2. React Native (mobile) & React (web) using Typescript
         3.  Angular Web views (web) & Hosted Angular Web Views (mobile) using Typescript
     1.  These components need to be able to run inside of a container to support the Modular Monolith style of server apps
 
@@ -109,9 +109,9 @@
 ## 3. Summary and Reinforcement of the Solution
 [**Build lots of Wildlife.ai, pics and Nature Pics as we read**]
 >
->This proposed solution for Wildlife.ai, is not just addressing the challenges of today; it is shaping the future of wildlife conservation. Join us in this journey towards a world where AI empowers us to protect and preserve the incredible biodiversity that surrounds us.
+>This proposed solution for Wildlife.ai, is not just addressing the challenges of today; it will help  shape the future of wildlife conservation. Join us in this journey towards a world where AI empowers us to protect and preserve the incredible biodiversity that surrounds us.
 
 [**Thank You Slide with all of Our Pics and Names**]
 
-- Circular pics of us with our names.
+- Circular pics of us with our names. (First or last??)
 > Thanks for the opportunity to present our solution in the Semifinals
