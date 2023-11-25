@@ -34,9 +34,9 @@ TABLE OF CONTENTS <!-- omit from toc -->
 This is the GitHub repository for a solution created by team Wonderous Toys during the [2023 O'Reilly Architectural Kata](https://learning.oreilly.com/featured/architectural-katas/). It contains a proposed architecture for [Wildlife.ai](https://wildlife.ai/) project for an open-source wildlife camera that will enable more efficient species conservation efforts worldwide.
 
 This solution emphasizes:
-- **Simplicity**: Mobile first, simple Pub/Sub for Notifcations, significant control for local camera owners
-- **Frugality**: Few and small re-occuring infrastructure charges, Modular monolith when we need it. Pre-existing use of users mobile devices.
-- **Autonomy**: *Server* pieces could be lifted and shifted out of the mobile app and into contaners and could be hosted locally (Bring-Your-Own-Cloud) by the user / nature area without backend servers if needed (100% email Notification or Mesh networking if needed)
+- **Simplicity**: Mobile first, simple Pub/Sub for Notifications, significant control for local camera owners
+- **Frugality**: Few and small recurring infrastructure charges, Modular monolith when we need it. Pre-existing use of  users' mobile devices.
+- **Autonomy**: Mobile app and Event-driven pieces could be lifted and shifted into contaners and could be hosted locally (Bring-Your-Own-Cloud) by the user if needed (100% email Notification or Mesh networking if needed)
 
 
 # 2. Problem Space
@@ -78,18 +78,18 @@ The project operates within specific constraints:
 
 1. <a name="charitable">Wildlife ai operates as a charitable trust</a>
 > Assumption: Wildlife ai being a charitable trust we assume there will be budgetary constraints for this project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
-2. <a name="opensource">Wildlife AI want to build an open-source camera integrated with artificial intelligence for species conservation efforts.</a>
-> Assumption:  The software soution serves as an add-on to the camera, facilitating data sharing with various platforms, enthusiasts, and biologists. Both the camera and the accompanying software will be open-source, catering to users with varying levels of technical expertise.
+2. <a name="opensource">Wildlife AI wants to build an open-source camera integrated with artificial intelligence for species conservation efforts.</a>
+> Assumption:  The software solution serves as an add-on to the camera, facilitating data sharing with various platforms, enthusiasts, and biologists. Both the camera and the accompanying software will be open-source, catering to users with varying levels of technical expertise.
 3. <a name="camerahw">Camera hardware specifications:</a>
   * Ultra-low-power microcontrollers (up to 512KB Flash)
-  * Comprised of interchangeable modules (e.g., optical sensor, IR lights, transceiver module, batteries) within a watertight 3D-printed enclosure.
-4. <a name="cameraaq">Camera Aquisition:</a>
+  * Comprising of interchangeable modules (e.g., optical sensor, IR lights, transceiver module, batteries) within a watertight 3D-printed enclosure.
+4. <a name="cameraacq">Camera Acquisition:</a>
 > Assumption: Camera will be purchased from Wildlife AI, partner, or User builds it themselves using Wildlife AI open source.
-  * Mobile App Installation: User can download Mobile App from the app stores.
+  * Mobile App Installation: Users can download Mobile App from the app stores.
   * Integrations availability: Any integrations with partners and vendors applications can be configured in the application.
   * Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
-5. <a name="userbase"> User Base: The user base comprises only a few hundred users and be spread globally.</a>
-> Assumption: Each user will only hava a small number of cameras. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient.
+5. <a name="userbase"> User Base: The user base comprises only a few hundred users and is spread globally.</a>
+> Assumption: Each user will only have a small number of cameras. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient.
 6. <a name="userexpertise">User skill sets:</a>
 > Assumption: Biologists, enthusiasts, and volunteers have different levels of technical know-how. Since many tasks are done by volunteers, it would be great if the solution is simple for anyone to use.
 7. <a name="devicecomp">User Device capability:</a>
@@ -99,15 +99,15 @@ The project operates within specific constraints:
 
 ## 3.1 Context - Key Drivers
 
-In the pursuit of the charities success, several critical factors stand out as the driving forces propelling Wildlife AI's operations forward. These key drivers encompass the core principles and objectives behind our team's technical solution to guide Wildlife AI's strategies and actions.
+In the pursuit of the charity's success, several critical factors stand out as the driving forces propelling Wildlife AI's operations forward. These key drivers encompass the core principles and objectives behind our team's technical solution to guide Wildlife AI's strategies and actions.
 
 **Prototype Testing**
 
-One of the foremost drivers is ability to introduce Wildlife AI's product for the testing of prototypes and ideas. This imperative arises from the desire to observe how Wildlife AI's innovations resonate with a wide spectrum of life forms inhabiting diverse ecosystems, including forests, oceans, and avian habitats. By quickly immersing Wildlife AI's solutions in these diverse environments, invaluable insights are gained into what works and what doesn't. This agile approach enables Wildlife AI to respond promptly to feedback, refining the product based on real-world usage and ensuring its suitability for various species and ecosystems across the globe.
+One of the foremost drivers is the ability to introduce Wildlife AI's product for the testing of prototypes and ideas. This imperative arises from the desire to observe how Wildlife AI's innovations resonate with a wide spectrum of life forms inhabiting diverse ecosystems, including forests, oceans, and avian habitats. By quickly immersing Wildlife AI's solutions in these diverse environments, invaluable insights are gained into what works and what doesn't. This agile approach enables Wildlife AI to respond promptly to feedback, refining the product based on real-world usage and ensuring its suitability for various species and ecosystems across the globe.
 
 **Species Conservation With Community/Government Collaboration**
 
-Another pivotal driver Wildlife AI is the commitment to species conservation. Wildlife AI actively monitors the well-being and potential endangerment of various species, taking proactive measures when necessary. These actions may include engaging with local communities and collaborating with governmental authorities to protect and preserve threatened species. This reflects their dedication to sustainable practices and environmental protection, aligning core objectives with broader societal and ecological goals.
+Another pivotal driver of Wildlife AI is the commitment to species conservation. Wildlife AI actively monitors the well-being and potential endangerment of various species, taking proactive measures when necessary. These actions may include engaging with local communities and collaborating with governmental authorities to protect and preserve threatened species. This reflects their dedication to sustainable practices and environmental protection, aligning core objectives with broader societal and ecological goals.
 
 **Future-ready Integration Support**
 
@@ -151,13 +151,13 @@ By prioritizing these architectural characteristics, we aim to develop a system 
 
 ## 3.3 Architecture Style Proposed
 
-Based on the architectural characteristics we've identified, we suggest a combination of **Modular Monolith**, **Micro kernel**, and **Event-Driven** architectures to build the application. See the image below with the mapping between architecture characteristics mentioned above and the Architecture Styles proposed in this solution. In this approach, we organize the different aspects of the functionalities into modules and one of these modules uses micro-kernel design. Each of these modules has its own well defined API's that serve as a way for them to communicate with one another and the user interface components. In addition, to address the neal-real time communication request of this problem and its contraint of uncertain internet access, the event-driven architecture can sucessfully address the needs. This setup makes sure that the application is well-structured and can efficiently work with different integrations to support the business requirements.
+Based on the architectural characteristics we've identified, we suggest a combination of **Modular Monolith**, **Micro kernel**, and **Event-Driven** architectures to build the application. See the image below with the mapping between architecture characteristics mentioned above and the Architecture Styles proposed in this solution. In this approach, we organize the different aspects of the functionalities into modules and one of these modules uses micro-kernel design. Each of these modules has its own well defined API's that serve as a way for them to communicate with one another and the user interface components. In addition, to address the near-real time communication request of this problem and its constraint of uncertain internet access, the event-driven architecture can successfully address the needs. This setup makes sure that the application is well-structured and can efficiently work with different integrations to support the business requirements.
 
 ![Architecture Style](figures/ArchitectureStyle.png "Architecture Style")
 
 ## 3.4 Other Considerations
 
-Additionally, we recognize the importance of the system's ability to adapt and grow, especially when some users in the Wildlife AI's open-source community require more resources than others. In situations like these, as business needs change, the system should be capable of supporting growth by seamlessly scaling, potentially moving one or more services outside of the (modular-monolithic) application ecosystem to microservices. This flexibility guarantees that Wildlife AI's technical setup stays in sync with user's growing mission and operational requirements.
+Additionally, we recognize the importance of the system's ability to adapt and grow, especially when some users in the Wildlife AI's open-source community require more resources than others. In situations like these, as business needs change, the system should be capable of supporting growth by seamlessly scaling, potentially moving one or more services outside of the (modular-monolithic) application ecosystem to microservices. This flexibility guarantees that Wildlife AI's technical setup stays in sync with user's growth and operational requirements.
 
 # 4. Domain Design
 
@@ -166,7 +166,7 @@ The Domain Design section of the Wildlife AI architecture outlines the structure
 
 
 ## Identification Of Domains
-<img src="figures/EventStorming.drawio.svg" alt="Domain identification excercise" width="600"/>
+<img src="figures/EventStorming.drawio.svg" alt="Domain identification exercise" width="600"/>
 
 ## Domain Capabilities In-depth
 [User Domain](domain/user-domain.md) places users at the forefront of the system, emphasizing user-centric control and interaction with the wildlife cameras and associated functionalities.
@@ -203,7 +203,7 @@ In this module, we keep very little information about the user essentially retai
 Furthermore, this module provides the functionality to configure where notifications should be sent when the camera detects a wildlife species. Users can set their preferred notification endpoint, ensuring they are promptly informed when wildlife is spotted.
 
 ### Multimedia module
-Multimedia module encompasses handling image and video data once they are retrieved from camera. In our application, this means that users can upload, store, retrieve, and take notes about the wildlife species they spotted in the images or videos. This module is essential because it deals with the core media files that our application relies on for integrations with other partners and vendors. If necessary, we can use CDN and other caching methods to bring data closer to the user to speed things up and make the data load faster.
+Multimedia module encompasses handling image and video data once they are retrieved from a camera. In our application, this means that users can upload, store, retrieve, and take notes about the wildlife species they spotted in the images or videos. This module is essential because it deals with the core media files that our application relies on for integrations with other partners and vendors. If necessary, we can use CDN and other caching methods to bring data closer to the user to speed things up and make the data load faster.
 
 ### Integration module
 The Integrations module allows Wildlife AI camera users to connect with various services, like camera trap labelling and expert platforms, and data sharing with the community. It achieves this by making individual plugins for each integration, making it adaptable and future-ready for adding more plugins. These plugins connect with partner APIs and help manage data interchange among partner APIs. This module uses a micro kernel architecture to support the interoperability characteristic.
@@ -212,7 +212,7 @@ The Integrations module allows Wildlife AI camera users to connect with various 
 The Workflow module exposes APIs designed to efficiently manage and coordinate tasks across all the above modules within the Wildlife AI application to support certain expensive use cases.
 
 # Long Term Expansions
-* Mobile app plugins should use rest API to access thrid-party integrations
+* Mobile app plugins should use rest API to access third-party integrations
 * User purchasing can be done in a portal
 * Create and coordinate projects in a portal for community togetherness
 * Sucess metrics of the camera
