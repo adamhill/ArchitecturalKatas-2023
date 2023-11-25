@@ -213,12 +213,15 @@ The Integrations module allows Wildlife AI camera users to connect with various 
 The Workflow module exposes APIs designed to efficiently manage and coordinate tasks across all the above modules within the Wildlife AI application to support certain expensive use cases.
 
 # Long Term Expansions
-* Mobile app plugins should use rest API to access third-party integrations
-* User purchasing can be done in a portal
-* Create and coordinate projects in a portal for community togetherness
-* Sucess metrics of the camera
-* Build strict boundaries so there is no direct communication between modules
+As we envision the future evolution of the Wildlife.ai solution, we anticipate several long-term expansions that aim to enhance user experience, community collaboration, and overall system effectiveness.
 
+* Over time, additional features and integrations can be introduced through mobile app plugins. These plugins will utilize REST APIs to seamlessly connect with third-party services, providing users with a broader range of functionalities and options.
+* Introducing a user portal for purchasing allows users to conveniently acquire additional features, plugins, or even hardware components. This portal serves as a centralized hub for users to manage their subscriptions, make purchases, and explore new offerings.
+* A dedicated portal for creating and coordinating projects fosters community togetherness. Users can collaborate on wildlife conservation initiatives, share insights, and collectively contribute to the success of specific projects.
+* Implementing a system to track and analyze success metrics of the wildlife cameras enhances the monitoring and evaluation process. Metrics such as species identification accuracy, camera uptime, and data contribution to conservation databases can be measured.
+* Future focus on evolving the open-source ecosystem by encouraging community contributions, fostering developer engagement, and actively seeking partnerships with other open-source projects with wildlife conservation interests.
+
+These long-term expansions align with our commitment to continuous improvement, adaptability to user needs, and the promotion of a collaborative and user-centric ecosystem within the Wildlife.ai project.
 
 
 # ADR's
