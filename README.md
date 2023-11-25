@@ -133,12 +133,12 @@ After conducting a thorough analysis of Wildlife AI's [requirements](#22-require
 [#open source initiative](#opensource)
 
 3. **Domain Part Abstraction:** The incorporation of domain part abstraction simplifies interactions within the system by hiding complex technical details and providing an intuitive interface with the help of API's. This abstraction streamlines the user experience, making it more user-friendly and reducing the learning curve.
+> This solution maked identifying species easy for users by providing a simple way to use AI capacilities without needing to understand all the technical stuff happening in the background. This makes the system more user-friendly and doesn't require users to be tech experts.
 
-> YET TO BE WRITTERN
-
-4. **Interoperability:** Interoperability ensures that our system can seamlessly communicate with and function alongside the tools and services deployed by Wildlife's partners and vendors. It helps Wildlife AI users to work well together with partners, vendors, and other ecosystem members to enhance wildlife conservation efforts.
+1. **Interoperability:** Interoperability ensures that our system can seamlessly communicate with and function alongside the tools and services deployed by Wildlife's partners and vendors. It helps Wildlife AI users to work well together with partners, vendors, and other ecosystem members to enhance wildlife conservation efforts.
 > Based on the requirements, the system should be able to interact with the third party applications.
 [#system requirements](#system-requirements)
+[#open source initiative](#opensource)
 
 Furthermore, we aim to provide the following additional architectural features:
 
