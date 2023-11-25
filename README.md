@@ -80,19 +80,19 @@ The project operates within specific constraints:
 > Assumption: Wildlife ai being a charitable trust we assume there will be budgetary constraints for this project. Financial limitations necessitate cost-effective solutions and careful allocation of resources to ensure the project's sustainability and success.
 2. <a name="opensource">Wildlife AI want to build an open-source camera integrated with artificial intelligence for species conservation efforts.</a>
 > Assumption:  The software soution serves as an add-on to the camera, facilitating data sharing with various platforms, enthusiasts, and biologists. Both the camera and the accompanying software will be open-source, catering to users with varying levels of technical expertise.
-3. Camera hardware specifications:
+3. <a name="camerahw">Camera hardware specifications:</a>
   * Ultra-low-power microcontrollers (up to 512KB Flash)
   * Comprised of interchangeable modules (e.g., optical sensor, IR lights, transceiver module, batteries) within a watertight 3D-printed enclosure.
-4 Camera Aquisition:
+4. <a name="cameraaq">Camera Aquisition:</a>
 > Assumption: Camera will be purchased from Wildlife AI, partner, or User builds it themselves using Wildlife AI open source.
   * Mobile App Installation: User can download Mobile App from the app stores.
   * Integrations availability: Any integrations with partners and vendors applications can be configured in the application.
   * Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
-5. User Base: The user base comprises only a few hundred users and be spread globally.
+5. <a name="userbase"> User Base: The user base comprises only a few hundred users and be spread globally.</a>
 > Assumption: Each user will only hava a small number of cameras. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient.
 6. <a name="userexpertise">User skill sets:</a>
 > Assumption: Biologists, enthusiasts, and volunteers have different levels of technical know-how. Since many tasks are done by volunteers, it would be great if the solution is simple for anyone to use.
-7. User Device capability:
+7. <a name="devicecomp">User Device capability:</a>
 > Assumption: Mobile devices possessed by the users have sufficient processing power and internet connectivity to handle essential tasks like edit & process images, data uploading and remote camera control.
 
 # 3. Solution Space
@@ -212,8 +212,9 @@ The Integrations module allows Wildlife AI camera users to connect with various 
 The Workflow module exposes APIs designed to efficiently manage and coordinate tasks across all the above modules within the Wildlife AI application to support certain expensive use cases.
 
 # Long Term Expansions
-* User purchasing can be done in the same portal
-* Create and coordinate projects in the portal for community togetherness
+* Mobile app plugins should use rest API to access thrid-party integrations
+* User purchasing can be done in a portal
+* Create and coordinate projects in a portal for community togetherness
 * Sucess metrics of the camera
 * Build strict boundaries so there is no direct communication between modules
 
@@ -232,6 +233,7 @@ The linked ADRs contain the primary architectural decisions regarding the propos
 
 [ADR 005](ADRs/ADR005-MicroKernel.md) Micro kernel architecture to connect with other partners and vendors.
 
+[ADR 006](ADRs/ADR006-OpenSolution.md) To align with the ethos of transparency, community involvement, and enabling a broader impact on conservation efforts.
 
 # References
 1. [Software Architecture Patterns, 2nd Edition by Mark Richards](https://learning.oreilly.com/library/view/software-architecture-patterns/9781098134280/)

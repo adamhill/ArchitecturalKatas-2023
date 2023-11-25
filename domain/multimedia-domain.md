@@ -40,6 +40,8 @@ Most of the camera side operations are a black box to us.
 ## Related ADRs
 
 [ADR 003](../ADRs/ADR003-Processing%20with%203rd%20Parties%20and%20Edge%20Computing)
+[ADR 001](../ADRs/ADR001-EventDriven.md)
+
 
 ## Summary
 In summary, the Multimedia domain is the main image system for the Wildlife AI's Mobile App, ensuring that users can store images and videos for processing and cataloging.
