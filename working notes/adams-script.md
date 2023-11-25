@@ -2,7 +2,7 @@
 
 ## 1. Front Matter
 - Problem statement
-- Particular charaqcteristics unique to the problem
+- Particular characteristics unique to the problem
   - Open Source
     - People can make their own camera or buy them from someone else that made them
     - Source code for apps is out on Github or someplace else. With Wildlife.ai doing lightweight admin and controlling releases.

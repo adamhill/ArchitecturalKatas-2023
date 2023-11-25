@@ -223,7 +223,6 @@ As we envision the future evolution of the Wildlife.ai solution, we anticipate s
 
 These long-term expansions align with our commitment to continuous improvement, adaptability to user needs, and the promotion of a collaborative and user-centric ecosystem within the Wildlife.ai project.
 
-
 # ADR's
 The linked ADRs contain the primary architectural decisions regarding the proposed design, including their context and rationale.
 
