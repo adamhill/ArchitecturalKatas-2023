@@ -204,21 +204,29 @@ In addition to these domain modules, we've created a special module called the w
 ### User module
 The primary responsibility of the user module is managing user accounts and information that's specific to each user. People using the application can create their accounts, log in (optionally), and view their profiles, which makes the whole experience more personalized for them. Additionally, within this module, users can choose their notification preferences to decide how they want to be notified about things in the app. This way, users have control over their interaction with the application. Additionally, they can invite other users who would like to participate in the project.
 
-### Notification module
-The Notification Module serves as a vital component within the Wildlife AI system, facilitating the seamless delivery of near real-time and relevant notifications to users. It plays a crucial role in timely camera nofitications and ensuring that users stay informed about significant events detected by the Wildlife AI cameras.
-This module is responsible for sending instant alert notifications to users when a Wildlife AI camera detects the presence of target wildlife species. The notifications are designed to be concise, providing users with essential information about the detected species.
-In addition, users can configure to receive important camera notifications such as battery alerts and other similar issues.
-
 ### Camera module
 The Camera Module within our modular monolith architecture primarily serves as the interface to connect with the API provided by the Wildlife AI cameras. This allows users to adjust camera settings while they are using our application when they are physically close to the camera location.
 In this module, we keep very little information about the user essentially retaining only a unique user identifier associated with the camera's owner.
 Furthermore, this module provides the functionality to configure where notifications should be sent when the camera detects a wildlife species. Users can set their preferred notification endpoint, ensuring they are promptly informed when wildlife is spotted.
 
+![Camera module use case](figures/camera-module.drawio.png "Camera module use case")
+
+### Notification module
+The Notification Module serves as a vital component within the Wildlife AI system, facilitating the seamless delivery of near real-time and relevant notifications to users. It plays a crucial role in timely camera notifications and ensuring that users stay informed about significant events detected by the Wildlife AI cameras.
+This module is responsible for sending instant alert notifications to users when a Wildlife AI camera detects the presence of target wildlife species. The notifications are designed to be concise, providing users with essential information about the detected species.
+In addition, users can configure to receive important camera notifications such as battery alerts and other similar issues.
+
+![Notification module use case](figures/notification-module.drawio.png "Notification module use case")
+
 ### Multimedia module
 Multimedia module encompasses handling image and video data once they are retrieved from a camera. In our application, this means that users can upload, store, retrieve, and take notes about the wildlife species they spotted in the images or videos. This module is essential because it deals with the core media files that our application relies on for integrations with other partners and vendors. If necessary, we can use CDN and other caching methods to bring data closer to the user to speed things up and make the data load faster.
 
+![Multimedia module use case](figures/multimedia-module.drawio.png "Multimedia module use case")
+
 ### Integration module
 The Integrations module allows Wildlife AI camera users to connect with various services, like camera trap labelling and expert platforms, and data sharing with the community. It achieves this by making individual plugins for each integration, making it adaptable and future-ready for adding more plugins. These plugins connect with partner APIs and help manage data interchange among partner APIs. This module uses a micro kernel architecture to support the interoperability characteristic.
+
+![Integration module use case](figures/integration-module.drawio.png "Integration module use case")
 
 ### Workflow module
 The Workflow module exposes APIs designed to efficiently manage and coordinate tasks across all the above modules within the Wildlife AI application to support certain expensive use cases.
