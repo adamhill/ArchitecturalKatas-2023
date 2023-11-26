@@ -85,9 +85,12 @@ The project operates within specific constraints:
   * Comprising of interchangeable modules (e.g., optical sensor, IR lights, transceiver module, batteries) within a watertight 3D-printed enclosure.
 4. <a name="cameraacq">Camera Acquisition:</a>
 > Assumption: Camera will be purchased from Wildlife AI, partner, or User builds it themselves using Wildlife AI open source.
-  * Mobile App Installation: Users can download Mobile App from the app stores.
-  * Integrations availability: Any integrations with partners and vendors applications can be configured in the application.
-  * Internet Access Uncertainty: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
+5. <a name="mobileapp">Mobile App Installation:</a>
+> Assumption: Users can download Mobile App from the app stores.
+6. <a name="integrations"> Integrations with Wildlife Insights, iNaturalist, Roboflow, GBIF etc.,:</a>
+> Assumption: Any integrations with partners and vendors applications can be configured in the application.
+7. <a name="internet"> Internet Access Uncertainty: 
+> Assumption: Internet access cannot be guaranteed in the locations where the cameras will operate. This implies that the data (e.g. videos and models) can only be accessed while in proximity of the camera.
 5. <a name="userbase"> User Base: The user base comprises only a few hundred users and is spread globally.</a>
 > Assumption: Each user will only have a small number of cameras. Given this relatively small user community, deploying and maintaining a hosted solution could prove burdensome and financially inefficient.
 6. <a name="userexpertise">User skill sets:</a>
@@ -122,7 +125,7 @@ In summary, focusing on prototype testing the product, ecological conservation, 
 After conducting a thorough analysis of Wildlife AI's [requirements](#22-requirements) and key business drivers, we have identified the primary architectural characteristics that the system should incorporate. These key characteristics include Feasibility, Simplicity, Domain Part Abstraction and Interoperability.
 
 1. **Feasibility/Cost-effective:** This architectural attribute ensures that the system's design aligns with the practicality of implementation within the available resources, budget, and time constraints.
-> Based on the financial constraints of being a charitable trust and to support the open-source initiative we want to propose a cost effective solution.
+> Based on the financial constraints of being a charitable trust and to support the open-source initiative we want to propose a cost-effective solution.
 [#charity](#charitable)
 [#open source initiative](#opensource)
 
@@ -131,10 +134,12 @@ After conducting a thorough analysis of Wildlife AI's [requirements](#22-require
 [#technical skill set](#userexpertise)
 [#open source initiative](#opensource)
 
-3. **Domain Part Abstraction:** The incorporation of domain part abstraction simplifies interactions within the system by hiding complex technical details and providing an intuitive interface with the help of API's. This abstraction streamlines the user experience, making it more user-friendly and reducing the learning curve.
-> This solution maked identifying species easy for users by providing a simple way to use AI capacilities without needing to understand all the technical stuff happening in the background. This makes the system more user-friendly and doesn't require users to be tech experts.
-[#technical skill set](#userexpertise)
-[#User expertise](#userexpertise)
+3. **Domain Part Abstraction:** The abstraction of domain components paves a path for a straightforward and intelligible foundation when building the software solution for open-source users. Each module is self-contained and easily comprehensible. 
+> Although not explicitly specified in the requirements, the abstraction of domain components has emerged as an implicit necessity to facilitate future scalability for the intended user base.
+>
+> For those seeking a solution that can be built upon existing functionalities, the abstraction of domain components provides a robust groundwork.
+>
+> In the event the community's requirements (Wildlife ai or its open-source users) surpass the initial setup, these domains can be extracted and implemented as services to accommodate scalability.
 
 4. **Interoperability:** Interoperability ensures that our system can seamlessly communicate with and function alongside the tools and services deployed by Wildlife's partners and vendors. It helps Wildlife AI users to work well together with partners, vendors, and other ecosystem members to enhance wildlife conservation efforts.
 > Based on the requirements, the system should be able to interact with the third party applications.
@@ -144,7 +149,6 @@ After conducting a thorough analysis of Wildlife AI's [requirements](#22-require
 Furthermore, we aim to provide the following additional architectural features:
 
 5. **Security:** Being an implicit characteristic, it is a crucial part of any software system design. We are determined to put strong protections in place to keep all data in our systems safe, making sure data stays private and shielding it from any possible threats.
-
 
 6. **Workflow:** With the need to integrate with multiple third party applications, the system could incorporate workflow capabilities to support complex processes, optimizes the flow of data and actions. This ensures that tasks are automated and well-coordinated within the solution
 
@@ -163,22 +167,29 @@ Additionally, we recognize the importance of the system's ability to adapt and g
 # 4. Domain Design
 
 ## Overview
-The Domain Design section of the Wildlife AI architecture outlines the structure and capabilities of various domains that together form a cohesive system for wildlife conservation. Each domain is specialized in its function, catering to different aspects of the overall solution. The design promotes a user-friendly and efficient approach to wildlife conservation, driven by advanced technologies and interdisciplinary expertise.
+Using domain-driven design at the simplest level, we identified the domains and user flows essential for meeting the requirements of Wildlife AI.
 
 
 ## Identification Of Domains
-<img src="figures/EventStorming.drawio.svg" alt="Domain identification exercise" width="600"/>
+<img src="figures/EventStorming.drawio.svg" alt="Domain identification exercise" width="600">
 
 ## Domain Capabilities In-depth
-[User Domain](domain/user-domain.md) places users at the forefront of the system, emphasizing user-centric control and interaction with the wildlife cameras and associated functionalities.
+This exercise helped us identify crucial components that must be developed to create a comprehensive solution. Each component is designed to support a specific functionality, aligning with the Single Responsibility Principle (SRP). This approach ensures that each component within the system has a clearly defined and singular purpose, contributing to a more modular design.
 
-[Multimedia Domain](domain/multimedia-domain.md) enables the Wildlife AI Mobile App to receive images from the Wildlife AI cameras.
+[User Domain](domain/user-domain.md) places users at the forefront of the system and encompasses functionalities such as user profile management and authentication. It is responsible for storing and managing user profile information, ensuring secure authentication processes, and storing user preferences, including their alert settings and the camera devices they own.
+
+[Camera Domain](domain/camera-domain.md) acts as an interface to connect to the Wildlife AI cameras with our mobile app, letting the app control the camera settings.
+
+[Multimedia Domain](domain/multimedia-domain.md) enables to collect and keep photos and videos from Wildlife AI cameras. This domain allows the mobile app to smoothly save and organize the pictures and videos taken by the cameras. It makes it easy for users to store, find, and look at the images and videos captured by the Wildlife AI cameras through the app. This domain makes the app more user-friendly and valuable for people who want to manage and view multimedia content.
 
 [Notification Domain](domain/notification-domain.md) enables the Wildlife AI cameras to send short notifications to the mobile app.
 
 [Integration Domain](domain/Integrations-module.md) serves as a crucial bridge connecting the Wildlife AI business with a diverse spectrum of services and platforms.
 
 ![Business Overview](figures/business-overview.drawio.png "Business Overview")
+
+## Summary
+Through this iterative domain identification and user flow analysis, we established a robust foundation for developing the core features of the Wildlife AI system.
 
 # 5. System Architecture
 
