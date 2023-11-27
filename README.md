@@ -255,9 +255,9 @@ The linked ADRs contain the primary architectural decisions regarding the propos
 
 [ADR 004](ADRs/ADR004%20-%20Ease%20of%20Use%20-%20Mobile%20App%20Only.md) Easy of Use proposes the use of a mobile app as the primary interaction model for Wildlife.ai.
 
-[ADR 005](ADRs/ADR005-MicroKernel.md) Micro kernel architecture to connect with other partners and vendors.
+[ADR 005](ADRs/ADR005-MicroKernel.md) MicroKernel architecture to is used to provide a standard facade to connect with other partners and vendors API's and external resources.
 
-[ADR 006](ADRs/ADR006-OpenSolution.md) To align with the ethos of transparency, community involvement, and enabling a broader impact on conservation efforts.
+[ADR 006](ADRs/ADR006-OpenSolution.md) To align with the ethos of transparency, sharing of code and hardware designs, building strong community involvement, and enabling a broader impact on conservation efforts.
 
 # References
 1. [Software Architecture Patterns, 2nd Edition by Mark Richards](https://learning.oreilly.com/library/view/software-architecture-patterns/9781098134280/)
