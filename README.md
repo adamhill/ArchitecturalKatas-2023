@@ -84,7 +84,7 @@ The project operates within specific constraints:
   * Ultra-low-power microcontrollers (up to 512KB Flash)
   * Comprising of interchangeable modules (e.g., optical sensor, IR lights, transceiver module, batteries) within a watertight 3D-printed enclosure.
 4. <a name="cameraacq">Camera Acquisition:</a>
-> Assumption: Camera could be purchased from Wildlife.ai, a manufacturing partner, or the user could build it themselves using Wildlife.ai open source harware plans and firmware.
+> Assumption: Camera could be purchased from Wildlife.ai, a manufacturing partner, or the user could build it themselves using Wildlife.ai open source hardware plans and firmware.
 5. <a name="mobileapp">Mobile App Installation:</a>
 > Assumption: Users can download Mobile App from the app stores or build it directly from the open source repository and load it on their mobile device.
 6. <a name="integrations"> Integrations with Wildlife Insights, iNaturalist, Roboflow, GBIF etc.,:</a>
