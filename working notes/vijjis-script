@@ -1,0 +1,53 @@
+### Problem Space Overview	[1]
+
+1. **Data Capture:**
+   - Deploy the camera in the desired location to capture information (images/videos) about the species residing in that area.
+
+2. **Data Analysis, Sharing, and Conservation:**
+   - Analyze the collected data to derive insights.
+   - Share the data with third-party services to contribute to a global impact and foster community building.
+   - Contribute to species conservation efforts by collaborating with relevant organizations and initiatives.
+
+3. **Middleware Solution:**
+   Develop a solution that acts as a <strong>middleware</strong> enabling users to store and seamlessly share data captured by the camera with other interested third-party services.
+
+
+### Challenges [2]
+
+1. **Open-Source AI Camera for Conservation:**
+   - Wildlife AI wants to develop an open-source camera embedded with artificial intelligence for species conservation efforts.
+
+2. **Software Solution Complexity:**
+   - The proposed software solution acts as an add-on to the open-source camera.
+   - Both the camera and software are open-source, accommodating users with diverse technical expertise levels.
+
+3. **Audience Variability:**
+   - Designing a solution that caters to diverse audiences, from tech-savvy to non-technical users, presents a significant challenge.
+
+
+### Proposal [3]
+
+In aiming for an open-source solution, we've outlined key characteristics: 
+
+- **Simplicity:**
+  - Design the solution to be easily understandable by diverse audiences (modularity).
+
+- **Feasibility:**
+  - Ensure cost-effectiveness to accommodate users with and without budget constraints.
+
+- **Adaptability through Modular Design:**
+  - Build the solution with the capability to transition into standalone services, facilitating future scalability for the intended user base.
+
+### Proposal continues - Architecture Style chart [4]
+
+[Insert https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/figures/ArchitectureStyle.png]
+
+
+[Insert same arrow pointing from modular monolith to microservices https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/figures/ArchitectureStyle.png]
+
+
+### System architecture diagram [5]
+
+[Insert https://github.com/adamhill/ArchitecturalKatas-2023/blob/main/figures/business-overview.drawio.png]
+
+[Insert 4 diagrams]
