@@ -182,9 +182,9 @@ This exercise helped us identify crucial components that must be developed to cr
 
 [Multimedia Domain](domain/multimedia-domain.md) enables to collect and keep photos and videos from Wildlife AI cameras. This domain allows the mobile app to smoothly save and organize the pictures and videos taken by the cameras. It makes it easy for users to store, find, and look at the images and videos captured by the Wildlife AI cameras through the app. This domain makes the app more user-friendly and valuable for people who want to manage and view multimedia content.
 
-[Notification Domain](domain/notification-domain.md) enables the Wildlife AI cameras to send short notifications to the Pub-Sub endpoint.
+[Notification Domain](domain/notification-domain.md) enables the Wildlife AI cameras to send short notifications to the configured Notification endpoint.
 
-[Integration Domain](domain/Integrations-module.md) serves as a crucial bridge connecting the Wildlife AI business with a diverse spectrum of services and platforms.
+[Integration Domain](domain/Integrations-module.md) serves as a crucial bridge connecting the Wildlife AI business with a diverse spectrum of 3rd party services and platforms.
 
 ## Summary
 Through this iterative domain identification and user flow analysis, we established a robust foundation for developing the core features of the Wildlife AI system.
