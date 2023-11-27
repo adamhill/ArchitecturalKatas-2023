@@ -186,8 +186,6 @@ This exercise helped us identify crucial components that must be developed to cr
 
 [Integration Domain](domain/Integrations-module.md) serves as a crucial bridge connecting the Wildlife AI business with a diverse spectrum of services and platforms.
 
-![Business Overview](figures/business-overview.drawio.png "Business Overview")
-
 ## Summary
 Through this iterative domain identification and user flow analysis, we established a robust foundation for developing the core features of the Wildlife AI system.
 
@@ -230,6 +228,10 @@ The Integrations module allows Wildlife AI camera users to connect with various 
 
 ### Workflow module
 The Workflow module exposes APIs designed to efficiently manage and coordinate tasks across all the above modules within the Wildlife AI application to support certain expensive use cases.
+
+### Solution Overview  
+
+![Business and system Overview](figures/business-system-interaction.drawio.png "Business and system Overview")
 
 # Long Term Expansions
 As we envision the future evolution of the Wildlife.ai solution, we anticipate several long-term expansions that aim to enhance user experience, community collaboration, and overall system effectiveness.
