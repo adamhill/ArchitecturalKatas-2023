@@ -4,7 +4,7 @@
 Use the micro kernel architecture style for the integrations module
 
 ## Status
-Proposed
+Accepted
 
 ## Context
 Our application needs to connect with other partners and vendors because Wildlife AI users want to share their data with other ecosystem members. In the future, we may need to add more ways for our app to connect with new partners as the community gets bigger.

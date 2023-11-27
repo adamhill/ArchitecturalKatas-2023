@@ -4,7 +4,7 @@
 Open Source Solution
 
 ## Status
-Proposed
+Accepted
 
 ## Context
 As part of the Wildlife.ai project's commitment to fostering collaboration and accelerating wildlife conservation efforts, a decision needs to be made regarding making the entire solution, including the wildlife cameras and the mobile app, an open source solutoin. This move aligns with the ethos of transparency, community involvement, and enabling a broader impact on conservation efforts.

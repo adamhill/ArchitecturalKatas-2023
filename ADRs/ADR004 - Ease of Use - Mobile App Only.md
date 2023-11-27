@@ -4,7 +4,7 @@
 Easy of Use - Primarily use a Mobile App
 
 ## Status
-Proposed
+Accepted
 
 ## Context
 From the initial requirements, the mobile app for Wildlife.ai seems to be the most mentioned device next to the camera itself. Setting up, adjusting and retreving the photos all mention a mobile application
@@ -22,13 +22,13 @@ We have decided that the primary interaction model will be an app, primarily bui
 4. **Cost** By using a cross-platform framwork the app can be written using common codebase and simply recompiling for the needed platform (iOS, Android) and if the correct toolkit is chosen, Wildlife.ai can get a Windows, macOS with very little effort and a web app with a bit more effort if the need arises
 
 ## Implementation Details
-The mobile app should be written in one of the avialble cross platform mobile toolkits that are available to build mobile apps. They can all acccess native API's (WiFi & Bluetooth) as needed.
+The mobile app should be written in one of the many cross platform mobile toolkits that are available to build mobile apps. They can all acccess native API's (WiFi & Bluetooth) as needed.
 
 These include:
 - **Xamarin / Maui**: Can compile to iOS, Android, macOS, Windows, Hybrid-Web (easy control and business logic reuse from the mobile / deskop apps)
 - **React (Native)**: iOS, Android, Windows, macOS, Hybrid-Web (once again thru control and business logic reuse)
-- **Flutter**: iOS, Android, macOS, Windows
-- **Jetpack Multiplatform**: iOS, Android
+- **Angular & Angular Web Views**: iOS, Android, macOS, Windows, Hybrid-Web
+
 
 ## Benefits
 - Single app for operations by users

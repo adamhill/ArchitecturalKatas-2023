@@ -37,7 +37,7 @@
 >
 > This is an open source solution so we will mainly consider open source systems, frameworks, languages and specifications when we are able to.
 >
-> [**Open source image build**]
+> [** No internet, open source image build**]
 >
 > There are only 100's of users anticipated by Wildlife.ai so we don't need a hightly scalable infrastructure.
 >

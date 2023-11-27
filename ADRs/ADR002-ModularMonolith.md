@@ -4,7 +4,7 @@
 Use the modular monolith architecture style
 
 ## Status
-Proposed
+Accepted
 
 ## Context
 Our application is designed to handle user management, camera settings control, receiving camera-triggered notifications, and multimedia processing. It can also integrate with partners and vendors. We are developing this application using a modular monolith architecture. As the plan to make the application open-source for end users, we are committed to ensuring that it remains easy to understand, build, deploy, and modify when needed.
