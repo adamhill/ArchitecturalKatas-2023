@@ -1,8 +1,8 @@
-# Camaera Domain: Notification When Idenitification happens
+# Camera Domain: Notification When Idenitification happens
 
 The Camera domain allows the Camera to communicate with the Notification Domain to alert the Users when a photo is identified
 
-Our design recommends the used of a simple email message that is sent to the Notification endpoint
+Our design recommends the use of a simple email message that is sent to the Notification endpoint
 
 ## Components
 - A network connection to send out the message immediately
