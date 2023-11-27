@@ -86,7 +86,7 @@ The project operates within specific constraints:
 4. <a name="cameraacq">Camera Acquisition:</a>
 > Assumption: Camera could be purchased from Wildlife.ai, a manufacturing partner, or the user could build it themselves using Wildlife.ai open source harware plans and firmware.
 5. <a name="mobileapp">Mobile App Installation:</a>
-> Assumption: Users can download Mobile App from the app stores.
+> Assumption: Users can download Mobile App from the app stores or build it directly from the open source repository and load it on their mobile device.
 6. <a name="integrations"> Integrations with Wildlife Insights, iNaturalist, Roboflow, GBIF etc.,:</a>
 > Assumption: Any integrations with partners and vendors applications can be configured in the application.
 7. <a name="internet"> Internet Access Uncertainty: 
