@@ -4,14 +4,14 @@ The User Domain within the Wildlife AI architecture places users at the forefron
 
 ## Components
 
-### User Authentication and Authorization
+#### 1. User Authentication and Authorization
 A fundamental aspect of the User Domain is the management of user authentication and authorization. It ensures that users can securely access the system, control cameras, and utilize various features while maintaining data privacy and security.
 
-### Mobile App Interface
+#### 2. Mobile App Interface
 The User Domain hosts the mobile app interface, providing an intuitive platform for users to interact with the wildlife cameras. The mobile app allows users to perform critical actions, such as turning cameras on and off, adjusting settings, and uploading models. This user-friendly interface is designed to accommodate users with varying levels of technical expertise, making it accessible to a broad audience.
 
-### Community Involvement and Coordination
-In a near future, for community-driven projects and collaborations, the User Domain will facilitate community involvement and coordination. Users can engage with other enthusiasts, experts, and non-profit organizations to plan and coordinate projects within a specific region. The platform also supports project management by providing tools to measure success metrics and project coordination.
+#### 3. Community Involvement and Coordination
+In a near future, for community-driven projects and collaborations, the User Domain will facilitate community involvement and coordination. Users could engage with other enthusiasts, experts, and non-profit organizations to plan and coordinate projects within a specific region.
 
 ## Related ADRs
 
