@@ -19,6 +19,8 @@ TABLE OF CONTENTS <!-- omit from toc -->
   - [Architecture Characteristics](#architecture-characteristics)
   - [Architecture Style Proposed](#architecture-style-proposed)
   - [Other Considerations](#other-considerations)
+      </td>
+    <td>
 - [4. Domain Design](#4-domain-design)
   - [Overview](#overview)
   - [Identification Of Domains](#identification-of-domains)
