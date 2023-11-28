@@ -186,13 +186,13 @@ Using domain-driven design at the simplest level, we identified the domains and 
 ## Domain Capabilities In-depth
 This exercise helped us identify crucial components that must be developed to create a comprehensive solution. Each component is designed to support a specific functionality, aligning with the Single Responsibility Principle (SRP). This approach ensures that each component within the system has a clearly defined and singular purpose, contributing to a more modular design.
 
-[User Domain](domain/user-domain.md) places users at the forefront of the system and encompasses functionalities such as user profile management and authentication. It is responsible for storing and managing user profile information, ensuring secure authentication processes, and storing user preferences, including their alert settings and the camera devices they own.
+[User Domain](domain/user-domain.md) places users at the forefront of the system, incorporating features like user registration, profile management and authentication. Manages storing and retrieving user profile information, ensures secure authentication procedures, and stores user preferences.
 
 [Camera Domain](domain/camera-domain.md) acts as an interface to connect to the Wildlife AI cameras with our mobile app, letting the app control the camera settings.
 
-[Multimedia Domain](domain/multimedia-domain.md) enables to collect and keep photos and videos from Wildlife AI cameras. This domain allows the mobile app to smoothly save and organize the pictures and videos taken by the cameras. It makes it easy for users to store, find, and look at the images and videos captured by the Wildlife AI cameras through the app. This domain makes the app more user-friendly and valuable for people who want to manage and view multimedia content.
+[Multimedia Domain](domain/multimedia-domain.md) enables collecting and keeping photos and videos from Wildlife AI cameras. This domain allows the mobile app to save and organize the pictures and videos taken by the cameras smoothly. It makes it easy for users to store, find, and look at the images and videos captured by the Wildlife AI cameras through the app. 
 
-[Notification Domain](domain/notification-domain.md) enables the Wildlife AI cameras to send short notifications to the configured Notification endpoint.
+[Notification Domain](domain/notification-domain.md) is crucial in receiving notifications from various system domains, including the camera and third-party systems. It serves as the central hub for aggregating and managing alerts within the system.
 
 [Integration Domain](domain/Integrations-module.md) serves as a crucial bridge connecting the Wildlife AI business with a diverse spectrum of 3rd party services and platforms.
 
