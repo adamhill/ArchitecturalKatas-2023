@@ -4,7 +4,7 @@ TABLE OF CONTENTS <!-- omit from toc -->
 
 <table border="0">
  <tr style="vertical-align:top">
-    <td style="padding-right: 20px;">
+    <td>
 
 - [1. Welcome to Wonderous Toys](#1-welcome-to-wonderous-toys)
 - [2. Problem Space](#2-problem-space)
@@ -13,7 +13,7 @@ TABLE OF CONTENTS <!-- omit from toc -->
   - [Users](#users)
   - [System Requirements](#system-requirements)
   - [Constraints and Assumptions](#constraints-and-assumptions)
-- [3. Solution Space](#3-solution-space)
+- [3. Solution Space](#3-solution-space)[test.md](test.md)
   - [Context - Key Drivers](#context---key-drivers)
     - [Summary](#summary)
   - [Architecture Characteristics](#architecture-characteristics)
@@ -24,12 +24,12 @@ TABLE OF CONTENTS <!-- omit from toc -->
   - [Identification Of Domains](#identification-of-domains)
   - [Domain Capabilities In-depth](#domain-capabilities-in-depth)
   - [Summary](#summary-1)
+      </td>
+      <td style="padding: 10px;">
 
-    </td>
 
-    <td style="padding-left: 20px;">
+
 * [5. System Architecture](#5-system-architecture)
-
   - [Core Components of System Architecture](#core-components-of-system-architecture)
     - [User module](#user-module)
     - [Camera module](#camera-module)
@@ -41,8 +41,7 @@ TABLE OF CONTENTS <!-- omit from toc -->
 - [Long Term Expansions](#long-term-expansions)
 - [ADR's](#adrs)
 - [References](#references)
-
-    </td>
+  </td>
  </tr>
 </table>
 
