@@ -14,5 +14,8 @@ There are 3 main responsibility that this domain supports:
 #### Image Labeling:
 * Integrates labelling functionalities to categorize and annotate images for species identification.
 
+## Related ADRs
+[ADR 001 - Modular Monolith](../ADRs/ADR002-ModularMonolith.md)
+
 ## Summary
 A dedicated domain to handle multimedia data is essential to Wildlife AI's business requirements. This data serves as the driving force behind their mission of species conservation, facilitating analysis, sharing with other interested parties, and actionable initiatives based on the gathered information.

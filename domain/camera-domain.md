@@ -33,8 +33,11 @@ The domain must handle two types of messages:
 * Handles hardware specifications and technical information as is.
 
 ## Related ADRs
+[ADR 001 - Modular Monolith](../ADRs/ADR002-ModularMonolith.md)
 
-[ADR 001 - Event Driven Notifications](../ADRs/ADR001-EventDriven.md "Event Driven Notifications")
+[ADR 001 - Mobile Application](../ADRs/ADR004%20-%20Ease%20of%20Use%20-%20Mobile%20App%20Only.md)
+
+[ADR 001 - Event Driven](../ADRs/ADR001-EventDriven.md)
 
 ## Summary
 In summary, the Camera domain empowers users by enabling remote adjustment of camera settings and configure notification for timely alerts.

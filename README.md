@@ -1,18 +1,18 @@
 TABLE OF CONTENTS <!-- omit from toc --> 
 =================
 <center>
-<table border="0">
 
+<table border="0">
  <tr style="vertical-align:top">
-    <td>
+    <td style="padding-right: 20px;">
 
 - [1. Welcome to Wonderous Toys](#1-welcome-to-wonderous-toys)
 - [2. Problem Space](#2-problem-space)
-    - [Wildlife Watcher](#wildlife-watcher)
-    - [Objective](#objective)
-    - [Users](#users)
-    - [System Requirements](#system-requirements)
-    - [Constraints and Assumptions](#constraints-and-assumptions)
+  - [Wildlife Watcher](#wildlife-watcher)
+  - [Objective](#objective)
+  - [Users](#users)
+  - [System Requirements](#system-requirements)
+  - [Constraints and Assumptions](#constraints-and-assumptions)
 - [3. Solution Space](#3-solution-space)
   - [Context - Key Drivers](#context---key-drivers)
     - [Summary](#summary)
@@ -22,11 +22,14 @@ TABLE OF CONTENTS <!-- omit from toc -->
 - [4. Domain Design](#4-domain-design)
   - [Overview](#overview)
   - [Identification Of Domains](#identification-of-domains)
-          </td>
-    <td>
   - [Domain Capabilities In-depth](#domain-capabilities-in-depth)
   - [Summary](#summary-1)
-- [5. System Architecture](#5-system-architecture)
+
+    </td>
+
+    <td style="padding-left: 20px;">
+* [5. System Architecture](#5-system-architecture)
+
   - [Core Components of System Architecture](#core-components-of-system-architecture)
     - [User module](#user-module)
     - [Camera module](#camera-module)
@@ -38,8 +41,11 @@ TABLE OF CONTENTS <!-- omit from toc -->
 - [Long Term Expansions](#long-term-expansions)
 - [ADR's](#adrs)
 - [References](#references)
+
+    </td>
  </tr>
 </table>
+
 </center>
 
 # 1. Welcome to Wonderous Toys
