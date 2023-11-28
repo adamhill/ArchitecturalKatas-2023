@@ -22,10 +22,10 @@ TABLE OF CONTENTS <!-- omit from toc -->
 - [4. Domain Design](#4-domain-design)
   - [Overview](#overview)
   - [Identification Of Domains](#identification-of-domains)
+          </td>
+    <td>
   - [Domain Capabilities In-depth](#domain-capabilities-in-depth)
   - [Summary](#summary-1)
-        </td>
-    <td>
 - [5. System Architecture](#5-system-architecture)
   - [Core Components of System Architecture](#core-components-of-system-architecture)
     - [User module](#user-module)
