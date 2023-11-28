@@ -18,7 +18,7 @@ TABLE OF CONTENTS <!-- omit from toc -->
     - [Summary](#summary)
   - [Architecture Characteristics](#architecture-characteristics)
   - [Architecture Style Proposed](#architecture-style-proposed)
-  - [3.4 Other Considerations](#34-other-considerations)
+  - [Other Considerations](#other-considerations)
 - [4. Domain Design](#4-domain-design)
   - [Overview](#overview)
   - [Identification Of Domains](#identification-of-domains)
@@ -170,7 +170,7 @@ Based on the architectural characteristics we've identified, we suggest a combin
 
 ![Architecture Style](figures/ArchitectureStyle.png "Architecture Style")
 
-## 3.4 Other Considerations
+## Other Considerations
 
 Additionally, we recognize the importance of the system's ability to adapt and grow, especially when some users in the Wildlife AI's open-source community require more resources than others. In situations like these, as business needs change, the system should be capable of supporting growth by seamlessly scaling, potentially moving one or more services outside of the (modular-monolithic) application ecosystem to microservices. This flexibility guarantees that Wildlife AI's technical setup stays in sync with user's growth and operational requirements.
 
