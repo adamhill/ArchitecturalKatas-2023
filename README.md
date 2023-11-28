@@ -25,7 +25,7 @@ TABLE OF CONTENTS <!-- omit from toc -->
   - [Domain Capabilities In-depth](#domain-capabilities-in-depth)
   - [Summary](#summary-1)
 - [5. System Architecture](#5-system-architecture)
-  - [5.1 Core Components of System Architecture](#51-core-components-of-system-architecture)
+  - [Core Components of System Architecture](#core-components-of-system-architecture)
     - [User module](#user-module)
     - [Camera module](#camera-module)
     - [Notification module](#notification-module)
@@ -207,7 +207,7 @@ In addition to these domain modules, we've created a special module called the w
 
 ![System Architecture Overview](figures/system-architecture-basic.drawio.png "System Architecture")
 
-## 5.1 Core Components of System Architecture
+## Core Components of System Architecture
 
 ### User module
 The primary responsibility of the user module is managing user accounts and information that's specific to each user. People using the application can create their accounts, log in (optionally), and view their profiles, which makes the whole experience more personalized for them. Additionally, within this module, users can choose their notification preferences to decide how they want to be notified about things in the app. This way, users have control over their interaction with the application. Additionally, they can invite other users who would like to participate in the project.
