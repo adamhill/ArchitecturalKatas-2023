@@ -1,5 +1,11 @@
 TABLE OF CONTENTS <!-- omit from toc --> 
 =================
+<center>
+<table border="0">
+
+ <tr style="vertical-align:top">
+    <td>
+
 - [1. Welcome to Wonderous Toys](#1-welcome-to-wonderous-toys)
 - [2. Problem Space](#2-problem-space)
     - [Wildlife Watcher](#wildlife-watcher)
@@ -17,18 +23,22 @@ TABLE OF CONTENTS <!-- omit from toc -->
   - [Overview](#overview)
   - [Identification Of Domains](#identification-of-domains)
   - [Domain Capabilities In-depth](#domain-capabilities-in-depth)
+  - [Summary](#summary-1)
 - [5. System Architecture](#5-system-architecture)
   - [5.1 Core Components of System Architecture](#51-core-components-of-system-architecture)
     - [User module](#user-module)
-    - [Notification module](#notification-module)
     - [Camera module](#camera-module)
+    - [Notification module](#notification-module)
     - [Multimedia module](#multimedia-module)
     - [Integration module](#integration-module)
     - [Workflow module](#workflow-module)
+    - [Solution Overview](#solution-overview)
 - [Long Term Expansions](#long-term-expansions)
 - [ADR's](#adrs)
 - [References](#references)
-
+ </tr>
+</table>
+</center>
 
 # 1. Welcome to Wonderous Toys
 This is the GitHub repository for a solution created by team Wonderous Toys during the [2023 O'Reilly Architectural Kata](https://learning.oreilly.com/featured/architectural-katas/). It contains a proposed architecture for [Wildlife.ai](https://wildlife.ai/) project for an open-source, AI assisted wildlife camera that will enable more efficient species conservation efforts worldwide.
