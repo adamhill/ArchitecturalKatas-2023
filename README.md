@@ -14,10 +14,10 @@ TABLE OF CONTENTS <!-- omit from toc -->
     - [System Requirements](#system-requirements)
     - [Constraints and Assumptions](#constraints-and-assumptions)
 - [3. Solution Space](#3-solution-space)
-  - [3.1 Context - Key Drivers](#31-context---key-drivers)
+  - [Context - Key Drivers](#context---key-drivers)
     - [Summary](#summary)
-  - [3.2 Architecture Characteristics](#32-architecture-characteristics)
-  - [3.3 Architecture Style Proposed](#33-architecture-style-proposed)
+  - [Architecture Characteristics](#architecture-characteristics)
+  - [Architecture Style Proposed](#architecture-style-proposed)
   - [3.4 Other Considerations](#34-other-considerations)
 - [4. Domain Design](#4-domain-design)
   - [Overview](#overview)
@@ -110,7 +110,7 @@ The project operates within specific constraints:
 
 # 3. Solution Space
 
-## 3.1 Context - Key Drivers
+## Context - Key Drivers
 
 In the pursuit of the charity's success, several critical factors stand out as the driving forces propelling Wildlife AI's operations forward. These key drivers encompass the core principles and objectives behind our team's technical solution to guide Wildlife AI's strategies and actions.
 
@@ -130,7 +130,7 @@ In an ever-evolving technological landscape, the ability to adapt and evolve is 
 In summary, focusing on prototype testing the product, ecological conservation, and future-proofing systems that allow to shape the core values and actions of Wildlife AI the solution our team proposes should meet the needs of Wildlife AI's business today but also anticipate and address the challenges and opportunities of tomorrow.
 
 
-## 3.2 Architecture Characteristics
+## Architecture Characteristics
 
 After conducting a thorough analysis of Wildlife AI's [requirements](#22-requirements) and key business drivers, we have identified the primary architectural characteristics that the system should incorporate. These key characteristics include Feasibility, Simplicity, Domain Part Abstraction and Interoperability.
 
@@ -164,7 +164,7 @@ Furthermore, we aim to provide the following additional architectural features:
 
 By prioritizing these architectural characteristics, we aim to develop a system that not only aligns with Wildlife AI's current requirements but also offers adaptability for future growth and evolution. Our approach is geared towards delivering a feasible, user-friendly, and secure system that seamlessly interacts with external services and optimizes workflow processes where necessary.
 
-## 3.3 Architecture Style Proposed
+## Architecture Style Proposed
 
 Based on the architectural characteristics we've identified, we suggest a combination of **Modular Monolith**, **Micro kernel**, and **Event-Driven** architectures to build the application. See the image below with the mapping between architecture characteristics mentioned above and the Architecture Styles proposed in this solution. In this approach, we organize the different aspects of the functionalities into modules and one of these modules uses micro-kernel design. Each of these modules has its own well defined API's that serve as a way for them to communicate with one another and the user interface components. In addition, to address the near-real time communication request of this problem and its constraint of uncertain internet access, the event-driven architecture can successfully address the needs. This setup makes sure that the application is well-structured and can efficiently work with different integrations to support the business requirements.
 
