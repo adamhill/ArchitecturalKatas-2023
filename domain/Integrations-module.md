@@ -23,11 +23,8 @@ The Integrations module serves as a framework for displaying multimedia images a
 
 The Integrations module also takes on the responsibility of aggregating all APIs into a unified interface, enabling UI components to communicate and display data in a consistent manner. This aggregation ensures that data is presented to users as designed, allowing them to view and interact with it seamlessly. This centralization of APIs simplifies the complexity of identifying plugins and handling data from diverse sources, streamlining the user experience and making it more efficient.
 
-
 ## Related ADRs
-[ADR 006](../ADRs/ADR006-MicroKernel.md)
-
-[ADR 003](../ADRs/ADR003-Processing%20with%203rd%20Parties%20and%20Edge%20Computing.md)
+[ADR 006 Microkernel](../ADRs/ADR006-MicroKernel.md)
 
 ## Summary
 In summary, the Integrations module is the backbone of Wildlife AI's integration strategy, ensuring that Wildlife AI can effectively collaborate with partners and vendors, both now and in the future. Its micro-kernel architecture and the dual roles of API aggregation and image viewing with annotations capability make it a crucial part of the system, enhancing Wildlife AI's ability to harness the power of external services while maintaining a cohesive and efficient user experience.
